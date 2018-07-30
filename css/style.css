@@ -13,6 +13,10 @@ body {
  height:100%;
 }
 
+fieldset {
+ border:none;
+}
+
 #WholeContainer {
  min-height:100%;
  position:relative;
@@ -36,6 +40,10 @@ text-align: center;
  margin-bottom: 5px;
 }
 
+.EventInfoHeader p {
+ font-size: large;
+}
+
 .BandInfoText p {
  font-size: large;
 }
@@ -48,6 +56,84 @@ text-align: center;
 .FooterAlbumInfo p {
  font-size: large;
 }
+
+.EventInfoHeader p {
+  color:#ffffff;
+  text-align: center;
+}
+
+.EventsListTable {
+ color:#ffffff;
+ margin-bottom: 16%;
+}
+
+
+/*-------------------------------------EventTable*/
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: #ffffff;
+    text-align: left;
+    padding: 8px;
+}
+
+.EventsListTable a:hover {
+ background-color: White;
+ color:black;
+}
+
+/*-------------------------------------BandMemberList */
+
+.BandMembers {
+ display:grid;
+ grid-template-columns: auto;
+ padding: 10px;
+}
+
+.BandGridItem {
+ background-color: rgba(255, 255, 255, 0.8);
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+ 
+}
+
+.BandMembers p {
+ color: #000000;
+ margin-left: 15px;
+ ; 
+}
+
+.BandContainer {
+ margin-right: auto;
+ margin-left: auto;
+}
+
+.borderblack {
+ border: solid;
+ border-width: 2px;
+ border-color: #000000;
+}
+
+.imgsize {
+width:249px;
+}
+
+.floatleft {
+ float:left;
+}
+
+.floatright {
+ float:right;
+}
+
+
 
 /*-------------------------------------Header*/
 
@@ -83,10 +169,12 @@ header ul li {
  display: inline-block;
  padding: 10px 4em 10px 4em;
  font-size: large;
+ transition: background-color 0.5s ease-out;
 }
 
 .NavLink:hover {
  background-color: #ff9900;
+ font-weight: bold;
  border: solid;
  border-color: #ffffff;
  border-width: 1px;
@@ -101,11 +189,25 @@ audio {
  margin-bottom: 5px;
 }
 
+.AlbumShop {
+ display:block;
+ margin: 0 auto;
+ width:40%;
+ border: solid;
+ border-width: 5px;
+ border-color: #ffffff;
+}
+
 #Body {
  height:100%;
 }
 
-
+.BandHeaderImage img{
+ max-width: 60%;
+ height:auto;
+ display:block;
+ margin: 0 auto;
+}
 
 .col-small-old {
  position: relative;
@@ -118,10 +220,11 @@ audio {
 
 .col-small {
  display: flex;
- justify-content: center;
- 
 }
 
+.centercontent {
+ justify-content:center;
+}
 .col-form {
  display:flex;
  justify-content:center;
@@ -135,6 +238,15 @@ audio {
 
 .CompiledQuotes {
  margin: 40px 40px 40px 60px;
+}
+
+.EventsContainer {
+ margin-top: 4%;
+ margin-bottom: 10px;
+}
+
+.EventsList {
+ margin-top: 7%;
 }
 
 .FooterAlbumInfo {
@@ -159,6 +271,16 @@ input {
 
 .FormBox {
 color:#ffffff;
+background-color: rgba(0, 0, 0, 0.2);
+border: solid #ffffff 1px;
+}
+
+.FormButton {
+ background-color: #ff9900;
+ border: none;
+ color: #ffffff;
+ padding-top: 5px;
+ padding-bottom: 5px;
 }
 
 #comments {
@@ -212,14 +334,16 @@ color:#ffffff;
 }
 
 .VideoStructure {
- width: 80%;
+ Display:block;
+ margin: 0 auto;
+ width: 70%;
  z-index: -100;
  background-size: cover;
  overflow: hidden;
  border-style: solid;
  border-width: 5px;
  border-color: #ffffff;
- margin-left: 105px;
+ margin-top: 15px;
 }
 
 

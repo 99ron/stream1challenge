@@ -23,8 +23,8 @@
                     <ul class="navbar">
                         <li class="NavLink"><a href="index.html">Home</a></li>
                         <li class="NavLink"><a href="Music.html">Music</a></li>
-                        <li class="NavLink"><a title="Events">Events</a></li>
-                        <li class="NavLink"><a title="Band">Band</a></li>
+                        <li class="NavLink"><a href="Events.html">Events</a></li>
+                        <li class="NavLink"><a href="Band.html">Band</a></li>
                         <li class="NavLink"><a href="Contact.html">Contact Us</a></li>
                     </ul>
                 </nav>
@@ -40,14 +40,13 @@
                         <fieldset>
                             <Legend>Contact us!</Legend>
                             First name:<br>
-                            <input type="text" name="Firstname" ><br> Last Name:<br>
-                            <input type="text" name="Lastname" ><br> Email: <br>
+                            <input type="text" name="Firstname" required ><br> Last Name:<br>
+                            <input type="text" name="Lastname" required ><br> Email: <br>
                             <input type="email" name="Email" ><br>
                             <p><strong>Comment in the box below!</strong></p>
-                            <textarea rows="4" cols="45" name="comments" id="comments">
-                            
+                            <textarea rows="4" cols="45" name="comments" id="comments" required>
                         </textarea>
-                            <input type="submit" value="Submit">
+                            <button class="FormButton" type="submit"> Submit </button>
                         </fieldset>
                     </form>
 
