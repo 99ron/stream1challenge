@@ -106,7 +106,6 @@ td, th {
 
 .BandMembers p {
  color: #000000;
- margin-left: 15px;
  ; 
 }
 
@@ -122,7 +121,7 @@ td, th {
 }
 
 .imgsize {
-width:249px;
+width:249px; 
 }
 
 .floatleft {
@@ -143,6 +142,7 @@ width:249px;
  border-bottom: 2px solid #F2F2F2;
  padding: 5px 0;
  background-color: black;
+ z-index:1;
 }
 
 .logo {
@@ -162,14 +162,61 @@ a:visited {
 }
 
 nav {
- margin: 0.8em 0 0 5%;
+ margin: 0.8em 3px 0 4%;
 }
 
-header ul li {
+.navbar li {
  display: inline-block;
  padding: 10px 4em 10px 4em;
  font-size: large;
  transition: background-color 0.5s ease-out;
+}
+
+.DropDownMenu li {
+ padding: 10px 2em 10px 2em;
+}
+
+.navbardropdown{
+ display:none;
+}
+
+.DropDownMenu {
+ list-style: none;
+ margin:0;
+ padding:0;
+ position:absolute;
+ background-color: rgba(0, 0, 0, 0.8);
+ width:150px;
+ text-align: center;
+ z-index:1;
+ box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.8);
+ transform: translateY(-200%);
+ transition: transform .2s ease-in-out;
+ }
+
+.NavButton {
+ border: solid #ffffff 1px;
+ background-color: #ff9900;
+ margin-top:-7px;
+ width:150px;
+ height:50px;
+ color:#fff;
+ text-transform: uppercase; 
+ cursor:pointer;
+}
+
+.navbardropdown:hover button{
+ background-color: #ff8000
+}
+
+.NavDropHref:hover {
+ color:orange;
+ transition: color .2s ease-in-out;
+}
+
+
+.navbardropdown:hover .DropDownMenu {
+ transform: translateY(0);
 }
 
 .NavLink:hover {
@@ -267,12 +314,13 @@ input {
  margin:8px 0;
  box-sizing: border-box;
  border: 2px solid black;
+ border-radius: 4px;
 }
 
 .FormBox {
 color:#ffffff;
 background-color: rgba(0, 0, 0, 0.2);
-border: solid #ffffff 1px;
+border: solid #ffffff 2px;
 }
 
 .FormButton {
@@ -281,6 +329,15 @@ border: solid #ffffff 1px;
  color: #ffffff;
  padding-top: 5px;
  padding-bottom: 5px;
+ width:40%;
+ margin-left: 30%;
+ margin-right: 30%;
+ font-family: 'roboto';
+ border-radius: 4px;
+}
+
+.FormButton:hover {
+ background-color: 	#ff8000;
 }
 
 #comments {
@@ -289,6 +346,7 @@ border: solid #ffffff 1px;
  box-sizing: border-box;
  border: 2px solid black;
  border-radius: 4px;
+ margin-bottom: 10px;
 }
 
 .FormBox p {
@@ -394,7 +452,15 @@ border: solid #ffffff 1px;
  
  /*--------------------Header media query */
  
+ .navbar {
+  display:none;
+ }
  
+ .navbardropdown {
+  display:block;
+ }
+ 
+ .
  
  /*--------------------Body Media Query */
  
