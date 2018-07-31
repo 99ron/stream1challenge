@@ -169,6 +169,7 @@ nav {
  display: inline-block;
  padding: 10px 4em 10px 4em;
  font-size: large;
+ border-radius: 15px;
  transition: background-color 0.5s ease-out;
 }
 
@@ -196,6 +197,7 @@ nav {
 
 .NavButton {
  border: solid #ffffff 1px;
+ border-radius: 25px;
  background-color: #ff9900;
  margin-top:-7px;
  width:150px;
@@ -221,10 +223,11 @@ nav {
 
 .NavLink:hover {
  background-color: #ff9900;
- font-weight: bold;
+ font-style:italic;
  border: solid;
  border-color: #ffffff;
  border-width: 1px;
+ border-radius: 15px;
  padding: 8px 70px 10px 72px;
 }
 
@@ -276,7 +279,7 @@ audio {
  display:flex;
  justify-content:center;
  padding-top: 7em;
- padding-bottom: 12em;
+ padding-bottom: 2em;
 }
 
 .CompiledAudio {
@@ -305,7 +308,7 @@ audio {
  border: solid;
  border-color: #ffffff;
  margin:15px;
- background-color: #505050;
+ background-color: rgba(0,0,0,0.5);
 }
 
 input {
@@ -409,7 +412,7 @@ border: solid #ffffff 2px;
 
 #footerbox {
  position:absolute;
- margin:0 auto -80px;
+ margin:48px auto -80px;
  width:100%;
  background-color: transparent;
  border-top: solid;
@@ -448,6 +451,23 @@ border: solid #ffffff 2px;
 
 /*----------------------------------------------------MEDIA*/
 
+@media only screen and (max-width: 1380px) {
+ 
+ .logo {
+  font-size: 10px;
+  margin-top: 23px;
+ }
+ 
+ .navbar li {
+  display:inline-block;
+  padding: 10px 3em 10px 4em;
+ }
+ 
+}
+
+
+
+
 @media only screen and (max-width: 700px) {
  
  /*--------------------Header media query */
@@ -460,15 +480,19 @@ border: solid #ffffff 2px;
   display:block;
  }
  
- .
+ .logo {
+  font-size: 10px;
+  margin-top: 23px;
+ }
  
  /*--------------------Body Media Query */
  
  .VideoStructure {
   border-width: 1px;
-  margin:35px;
+  width:100%;
  }
  
+
  
  /*---------------------Footer media query */
  .footer-container {
