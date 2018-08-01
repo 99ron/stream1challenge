@@ -1,3 +1,4 @@
+/* This sets the background for all pages */
 html { 
    background: url(../assets/images/bgstage1.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -7,16 +8,19 @@ html {
     height:100%;
 }
 
+/* This sets the body margin's and font family */
 body {
  font-family: 'Roboto', sans-serif;
  margin:0px;
  height:100%;
 }
 
+/* This removes the default border for the form box */
 fieldset {
  border:none;
 }
 
+/* Sets the boundries for the main div for the page */
 #WholeContainer {
  min-height:100%;
  position:relative;
@@ -70,12 +74,14 @@ text-align: center;
 
 /*-------------------------------------EventTable*/
 
+/* Preset table font, border and width */
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
 
+/* Size of border for the row and columns */
 td, th {
     border-bottom: solid;
     border-width: 2px;
@@ -83,7 +89,7 @@ td, th {
     text-align: left;
     padding: 8px;
 }
-
+/* Colour change for links while hovered */
 .EventsListTable a:hover {
  background-color: White;
  color:black;
@@ -91,12 +97,14 @@ td, th {
 
 /*-------------------------------------BandMemberList */
 
+/* Layout for grid with bandmember details */
 .BandMembers {
  display:grid;
  grid-template-columns: auto;
  padding: 10px;
 }
 
+/* This sets the grid's background colour and border */
 .BandGridItem {
  background-color: rgba(255, 255, 255, 0.8);
   border: 3px solid rgba(0, 0, 0, 0.8);
@@ -104,11 +112,13 @@ td, th {
  
 }
 
+/* Paragraph text colour on Band members page */
 .BandMembers p {
  color: #000000;
  ; 
 }
 
+/* margin for the BandMembers Grid on display */
 .BandContainer {
  margin-right: auto;
  margin-left: auto;
@@ -120,6 +130,7 @@ td, th {
  border-color: #000000;
 }
 
+/* image size for band members profile pictures */
 .imgsize {
 width:249px; 
 }
@@ -136,6 +147,7 @@ width:249px;
 
 /*-------------------------------------Header*/
 
+/* header container formatting */
 .header-container {
  display: flex;
  flex-direction: row;
@@ -145,26 +157,29 @@ width:249px;
  z-index:1;
 }
 
+/* Logo text margins */
 .logo {
  margin-top: 7px;
  margin-left: 5%;
  display: block;
 }
 
-
+/* Link colour */
 a {
  text-decoration: none;
  color:#ffffff;
 }
-
+/* Link visited colour */
 a:visited {
  color: #ffffff;
 }
 
+/* Nav div margins */
 nav {
  margin: 0.8em 3px 0 4%;
 }
 
+/* navbar links formatting (not button/mobile display) */
 .navbar li {
  display: inline-block;
  padding: 10px 4em 10px 4em;
@@ -173,14 +188,17 @@ nav {
  transition: background-color 0.5s ease-out;
 }
 
+/* Mobile menu formatting */
 .DropDownMenu li {
  padding: 10px 2em 10px 2em;
 }
 
+/* Hides mobile menu button when >720px's */
 .navbardropdown{
  display:none;
 }
 
+/* Mobile menu formatting and trasitions */
 .DropDownMenu {
  list-style: none;
  margin:0;
@@ -195,6 +213,7 @@ nav {
  transition: transform .2s ease-in-out;
  }
 
+/* Button shown on mobile menu to access drop down list */
 .NavButton {
  border: solid #ffffff 1px;
  border-radius: 25px;
@@ -207,20 +226,24 @@ nav {
  cursor:pointer;
 }
 
+/* Mobile menu button colour change on hover */
 .navbardropdown:hover button{
  background-color: #ff8000
 }
 
+/* Text colour chane on hover for mobile menu */
 .NavDropHref:hover {
  color:orange;
  transition: color .2s ease-in-out;
 }
 
-
+/* This sets the menu out of site ready to be called */
 .navbardropdown:hover .DropDownMenu {
  transform: translateY(0);
 }
 
+/* On desktop/tablet device the buttons highlight and gain
+   a border when hovered*/
 .NavLink:hover {
  background-color: #ff9900;
  font-style:italic;
@@ -233,12 +256,15 @@ nav {
 
 
 /*--------------------------------------------------Body*/
+
+/* sets all audio width and margins */
 audio {
  width:80%;
  margin-left: 60px;
  margin-bottom: 5px;
 }
 
+/* sets the image location on the screen for user to click on to access store */
 .AlbumShop {
  display:block;
  margin: 0 auto;
@@ -259,15 +285,16 @@ audio {
  margin: 0 auto;
 }
 
-.col-small-old {
+/* .col-small-old {
  position: relative;
  min-height: 1px;
  float: left;
  width: 100%;
  height: 100%;
  text-align: center;
-}
+} */
 
+/* sets the main body for content to be displayed as flex */
 .col-small {
  display: flex;
 }
@@ -275,6 +302,8 @@ audio {
 .centercontent {
  justify-content:center;
 }
+
+/* formatting for the form to be centre of screen */
 .col-form {
  display:flex;
  justify-content:center;
@@ -311,6 +340,8 @@ audio {
  background-color: rgba(0,0,0,0.5);
 }
 
+
+/* formatting for input of the form */
 input {
  width:100%;
  padding:12px 20px;
@@ -320,12 +351,14 @@ input {
  border-radius: 4px;
 }
 
+/* Colour of text, background colour for form */
 .FormBox {
 color:#ffffff;
 background-color: rgba(0, 0, 0, 0.2);
 border: solid #ffffff 2px;
 }
 
+/* Customising the form submit button  */
 .FormButton {
  background-color: #ff9900;
  border: none;
@@ -343,6 +376,7 @@ border: solid #ffffff 2px;
  background-color: 	#ff8000;
 }
 
+/* Comment box formatting within the form */
 #comments {
  resize:none;
  width:100%;
@@ -356,16 +390,19 @@ border: solid #ffffff 2px;
  margin-left: 25px;
 }
 
+/* HR width and height */
 .block-divider {
  width: 105px;
  height: 5px;
  border: 0;
 }
 
+/* HR colour */
 .block-divider--white {
  background-color: #ffffff;
 }
 
+/* This gives the opaque look for the background image to make it less harsh */
 .opaque-overlay {
  top: 0;
  left: 0;
@@ -373,12 +410,13 @@ border: solid #ffffff 2px;
  background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* formatting for quotes */
 .QuoteBody {
  display: inline-block;
  vertical-align: top;
-
 }
 
+/* Margin for quotes container  */
 .QuoteBlocks {
  border-left: 0;
  padding: 10px 20px;
@@ -387,6 +425,7 @@ border: solid #ffffff 2px;
  color: #ffffff;
 }
 
+/* Formatting for store image photo */
 .StoreImage {
  display: block;
  margin-left: auto;
@@ -394,6 +433,7 @@ border: solid #ffffff 2px;
  width:20%;
 }
 
+/* Formatting for video on main screen, make it adjustable for different res */
 .VideoStructure {
  Display:block;
  margin: 0 auto;
@@ -410,9 +450,10 @@ border: solid #ffffff 2px;
 
 /*-------------------------------------------------Footer*/
 
+/* Formatting for the footer box */
 #footerbox {
  position:absolute;
- margin:48px auto -80px;
+ margin:0px auto -80px;
  width:100%;
  background-color: transparent;
  border-top: solid;
@@ -428,6 +469,7 @@ border: solid #ffffff 2px;
  bottom:0;
 }*/
 
+/* layout for sponser icons/links */
 .sponserbar li {
  display:inherit;
  margin: 5px;
@@ -435,6 +477,7 @@ border: solid #ffffff 2px;
  float:left;
 }
 
+/* layout for social media links */
 .socialmedialinks li {
  display:inherit;
  text-decoration: none;
@@ -442,7 +485,7 @@ border: solid #ffffff 2px;
  margin: 5px 5px 5px 5px;
  
 }
-
+/* Social media icon formatting */
 .socialmedialinks img {
  height: 50px;
  width: auto;
@@ -451,6 +494,7 @@ border: solid #ffffff 2px;
 
 /*----------------------------------------------------MEDIA*/
 
+/* This sets different styles to be used when below 1380px wide */
 @media only screen and (max-width: 1380px) {
  
  .logo {
@@ -467,7 +511,7 @@ border: solid #ffffff 2px;
 
 
 
-
+/* This sets different styles to be used when below 700px wide */
 @media only screen and (max-width: 700px) {
  
  /*--------------------Header media query */
