@@ -36,9 +36,17 @@ h2 {
  text-align: center;
 }
 
+.BandHeader_Text {
+ text-align: center;
+ font-size: xx-large;
+}
+
 .MusicHeader--Text{
  text-align: center;
- float:right;
+}
+
+.Quotes_Header {
+ font-size: xx-large;
 }
 
 .TrackList--Name {
@@ -56,7 +64,7 @@ h2 {
 }
 
 .MusicInfo--Text {
- font-size: larger;
+ font-size: 20px;
 }
 
 .CompiledAudio p {
@@ -196,7 +204,7 @@ nav {
 
 /* Navbar links formatting (not button/mobile display) */
 
-.Navbar li {
+.NavBar li {
  display: inline-block;
  padding: 10px 4em 10px 4em;
  font-size: large;
@@ -204,65 +212,81 @@ nav {
  transition: background-color 0.5s ease-out;
 }
 
-/* Mobile menu formatting */
-
-.DropDownMenu li {
- padding: 10px 2em 10px 2em;
+.NavBar_SM {
+  display:none;
 }
 
-/* Hides mobile menu button when >720px's */
+/* Click to expand button */
 
-.Navbardropdown {
- display: none;
+.NavBar_SM label{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    background-color: #57A0D4;
+    padding: 15px 20px;
+    margin-right: 45px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-/* Mobile menu formatting and trasitions */
+/*  The ul will have display:none by default */
 
-.DropDownMenu {
- list-style: none;
- margin: 0;
- padding: 0;
- position: absolute;
- background-color: rgba(0, 0, 0, 0.8);
- width: 150px;
- text-align: center;
- z-index: 1;
- box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.8);
- transform: translateY(-200%);
- transition: transform .2s ease-in-out;
+.NavBar_SM ul{
+    position: absolute;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    margin:0;
+    padding:0;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+
+    display: none;
 }
 
-/* Button shown on mobile menu to access drop down list */
-
-.NavButton {
- border: solid #ffffff 1px;
- border-radius: 25px;
- background-color: #ff9900;
- margin-top: -7px;
- width: 150px;
- height: 50px;
- color: #fff;
- text-transform: uppercase;
- cursor: pointer;
+.NavBar_SM ul li{
+    padding: 15px;
+    display:block;
+    background-color: #fff;
+    color: Black;
+    margin-bottom: 1px;
+    cursor: pointer;
 }
 
-/* Mobile menu button colour change on hover */
-
-.NavBarDropDown:hover button {
- background-color: #ff8000
+.NavBar_SM ul li:hover{
+    background-color: #ff9900;
+    color: #FFF;
 }
 
-/* Text colour chane on hover for mobile menu */
-
-.NavDropHref:hover {
- color: orange;
- transition: color .2s ease-in-out;
+.NavBar_SM ul li a{
+    color: inherit;
+    text-decoration: none;
+    
 }
 
-/* This sets the menu out of site ready to be called */
+/* This hides the checkbox icon */
 
-.NavBarDropDown:hover .DropDownMenu {
- transform: translateY(0);
+input[type=checkbox]{
+    display: none;
+}
+
+/* Hides the UL by default */
+
+.NavBar_SM ul {
+ display:none;
+}
+
+/* This shows the UL when checked. */
+
+.NavBar_SM input[type=checkbox]:checked ~ ul {
+ display:block;
 }
 
 /* On desktop/tablet device the buttons highlight and gain
@@ -271,6 +295,16 @@ nav {
 .NavBar_Link:hover {
  background-color: #ff9900;
  font-style: italic;
+ border: solid;
+ border-color: #ffffff;
+ border-width: 1px;
+ border-radius: 15px;
+ padding: 8px 70px 10px 72px;
+}
+
+.NavBar_LinkSelected {
+ background-color: #008080;
+ font-weight: bolder;
  border: solid;
  border-color: #ffffff;
  border-width: 1px;
@@ -344,7 +378,7 @@ audio {
 }
 
 .CompiledQuotes {
- margin: 40px 40px 40px 60px;
+ margin: 15px 40px 40px 60px;
 }
 
 .EventsContainer {
@@ -426,7 +460,7 @@ input {
 
 /* HR width and height */
 
-.block-divider {
+.Block_Divider {
  width: 105px;
  height: 5px;
  border: 0;
@@ -434,11 +468,25 @@ input {
 
 /* HR colour */
 
-.block-divider--white {
+.Block_Divider--White {
  background-color: #ffffff;
 }
 
 /* This gives the opaque look for the background image to make it less harsh */
+
+.PageImage {
+  margin-top:15px;
+}
+
+.PageImage_Img {
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 50%;
+    height: auto;
+    border: solid white 6px;
+}
 
 .opaque-overlay {
  top: 0;
@@ -453,11 +501,12 @@ input {
 .QuoteBody {
  display: inline-block;
  vertical-align: top;
+ text-align: center;
 }
 
 /* Margin for quotes container  */
 
-.QuoteBlocks {
+.QuoteBody_Block {
  border-left: 0;
  padding: 10px 20px;
  margin: 0 0 20px;
@@ -484,6 +533,7 @@ input {
  border-width: 5px;
  border-color: #ffffff;
  margin-top: 15px;
+ margin-bottom: 15px;
 }
 
 
@@ -557,12 +607,15 @@ input {
 @media only screen and (max-width: 650px) {
 
  /*--------------------Header media query */
- .Navbar {
+ .NavBar_FM {
   display: none;
  }
 
- .Navbardropdown {
-  display: block;
+ .NavBar_SM {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  color: #FFF;
  }
 
  .Header_Logo {
@@ -570,6 +623,13 @@ input {
   margin-top: 23px;
  }
 
+ .NavBar {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40%;
+}
+ }
+ 
  /*--------------------Body Media Query */
  .VideoStructure {
   border-width: 1px;
@@ -596,4 +656,4 @@ input {
   height: 40px;
   width: auto;
  }
-}
+

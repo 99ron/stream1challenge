@@ -8,6 +8,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
     <title>The Monkees</title>
+    <style type="text/css">
+        html {
+            background: #483D8B;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100%;
+        }
+    </style>
 </head>
 <!--- References to styles sheets and title--->
 
@@ -20,24 +30,25 @@
                         <h1>The Monkees</h1>
                     </a>
                 </div>
-                <nav class="Navbar">
-                    <li class="NavBar_Link"><a href="index.html">Home</a></li>
-                    <li class="NavBar_Link"><a href="Music.html">Music</a></li>
-                    <li class="NavBar_Link"><a href="Events.html">Events</a></li>
-                    <li class="NavBar_Link"><a href="Band.html">Band</a></li>
-                    <li class="NavBar_Link"><a href="Contact.html">Contact Us</a></li>
-
-                    <ul class="navbardropdown">
-                        <button class="NavButton">Menu</button>
-                        <div class="DropDownMenu">
-
-                            <li class="NavDropLink"><a class="NavDropHref" href="index.html">Home</a></li>
-                            <li class="NavDropLink"><a class="NavDropHref" href="Music.html">Music</a></li>
-                            <li class="NavDropLink"><a class="NavDropHref" href="Events.html">Events</a></li>
-                            <li class="NavDropLink"><a class="NavDropHref" href="Band.html">Band</a></li>
-                            <li class="NavDropLink"><a class="NavDropHref" href="Contact.html">Contact Us</a></li>
-                        </div>
-                    </ul>
+                <nav class="NavBar">
+                    <div class="NavBar_FM">
+                        <li class="NavBar_Link"><a href="index.html">Home</a></li>
+                        <li class="NavBar_Link"><a href="Music.html">Music</a></li>
+                        <li class="NavBar_LinkSelected"><a href="Events.html">Events</a></li>
+                        <li class="NavBar_Link"><a href="Band.html">Band</a></li>
+                        <li class="NavBar_Link"><a href="Contact.html">Contact Us</a></li>
+                    </div>
+                    <div class="NavBar_SM">
+                        <input type="checkbox" id="checkbox_toggle">
+                        <label for="checkbox_toggle">Menu</label>
+                        <ul>
+                            <li class="NavBar_SMLink"><a href="index.html">Home</a></li>
+                            <li class="NavBar_SMLink"><a href="Music.html">Music</a></li>
+                            <li class="NavBar_SMLink"><a href="Events.html">Events</a></li>
+                            <li class="NavBar_SMLink"><a href="Band.html">Band</a></li>
+                            <li class="NavBar_SMLink"><a href="Contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
             <!---Contains the nav links and header logo---->
@@ -50,10 +61,11 @@
                     <div class="Events--Header">
                         <h1>Events</h1>
                     </div>
-                    <hr class="block-divider block-divider--short block-divider--white">
+                    <hr class="Block_Divider Block_Divider--White">
                     <div class="Events--Text">
                         <p>The band has and always will play at parties, weddings and any other event or special occassions where you'd like to make it a memorable one.<br> All on the side of thier busy work schedule as they like to try and make their name
-                            noticed.</p>
+                            noticed.
+                        </p>
                     </div>
                     <div class="Events--Table">
                         <table>
@@ -127,7 +139,7 @@
             </footer>
             <!--- Contains the footer sponser and social links --->
         </div>
-    
+
     </div>
 </body>
 

@@ -8,8 +8,19 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
     <title>The Monkees</title>
+    <style type="text/css">
+        html {
+            background: #696969;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100%;
+        }
+    </style>
 </head>
 <!--- References to styles sheets and title--->
+
 <body>
     <div class="WholeContainer">
         <div class="Header">
@@ -19,24 +30,25 @@
                         <h1>The Monkees</h1>
                     </a>
                 </div>
-                <nav class="Navbar">
+                <nav class="NavBar">
+                    <div class="NavBar_FM">
                         <li class="NavBar_Link"><a href="index.html">Home</a></li>
-                        <li class="NavBar_Link"><a href="Music.html">Music</a></li>
+                        <li class="NavBar_LinkSelected"><a href="Music.html">Music</a></li>
                         <li class="NavBar_Link"><a href="Events.html">Events</a></li>
                         <li class="NavBar_Link"><a href="Band.html">Band</a></li>
                         <li class="NavBar_Link"><a href="Contact.html">Contact Us</a></li>
-                        
-                    <ul class="navbardropdown">
-                        <button class="NavButton">Menu</button>
-                        <div class="DropDownMenu">
-                            
-                            <li class="NavDropLink"><a class="NavDropHref" href="index.html">Home</a></li>
-                            <li class="NavDropLink"><a class="NavDropHref"href="Music.html">Music</a></li>
-                            <li class="NavDropLink"><a class="NavDropHref"href="Events.html">Events</a></li>
-                            <li class="NavDropLink"><a class="NavDropHref"href="Band.html">Band</a></li>
-                            <li class="NavDropLink"><a class="NavDropHref"href="Contact.html">Contact Us</a></li>
-                        </div>
-                    </ul>
+                    </div>
+                    <div class="NavBar_SM">
+                        <input type="checkbox" id="checkbox_toggle">
+                        <label for="checkbox_toggle">Menu</label>
+                        <ul>
+                            <li class="NavBar_SMLink"><a href="index.html">Home</a></li>
+                            <li class="NavBar_SMLink"><a href="Music.html">Music</a></li>
+                            <li class="NavBar_SMLink"><a href="Events.html">Events</a></li>
+                            <li class="NavBar_SMLink"><a href="Band.html">Band</a></li>
+                            <li class="NavBar_SMLink"><a href="Contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
             <!---Contains the nav links and header logo---->
@@ -44,12 +56,12 @@
         <!--- Contains the content for this page--->
         <div class="Body">
             <div class="col-small centercontent opaque-overlay">
-                
+
                 <div class="CompiledAudio">
                     <div class="MusicHeader">
                         <h1 class="MusicHeader--Text">Music</h1>
                     </div>
-                    <hr class="block-divider block-divider--short block-divider--white">
+                    <hr class="Block_Divider Block_Divider--White">
                     <div class="MusicInfo">
                         <p class="MusicInfo--Text"> Just some info regarding how the band came together and where they started out.<br> Back when rock/indie wasn't cool they were there... playing their hearts out to pass on the message! </p>
                     </div>
@@ -81,16 +93,16 @@
                     </div>
                     <div class="FooterAlbumInfo">
                         <p>Like their music? Buy their album from the store below!</p>
-                        
+
                         <a href="#">
                          <img class="AlbumShop" src="./assets/images/album2.jpg" alt="BUY ALBUM HERE!"></img>
                         </a>
                     </div>
                 </div>
-                
+
             </div>
-        </div> 
-    <div class="Footerbox">
+        </div>
+        <div class="Footerbox">
             <footer class="Footer">
                 <div class="Footer_SponserBar">
                     <li><a href="www.pearl.com"><img src="./assets/images/dunlop_w-80x50.png" alt="Dunlop"></img></a></li>
@@ -111,4 +123,5 @@
         </div>
     </div>
 </body>
+
 </html>

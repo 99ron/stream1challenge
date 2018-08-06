@@ -8,35 +8,46 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
     <title>The Monkees</title>
+    <style type="text/css">
+        html {
+            background: #696969;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
     <div class="WholeContainer">
         <div class="Header">
-            <header class="Header-Container">
+            <header class="Header_Container">
                 <div class="Header_Logo">
                     <a href="index.html" title="Monkees home page">
                         <h1>The Monkees</h1>
                     </a>
                 </div>
-                <nav class="Navbar">
+                <nav class="NavBar">
+                    <div class="NavBar_FM">
                         <li class="NavBar_Link"><a href="index.html">Home</a></li>
                         <li class="NavBar_Link"><a href="Music.html">Music</a></li>
                         <li class="NavBar_Link"><a href="Events.html">Events</a></li>
                         <li class="NavBar_Link"><a href="Band.html">Band</a></li>
-                        <li class="NavBar_Link"><a href="Contact.html">Contact Us</a></li>
-                        
-                    <ul class="navbardropdown">
-                        <button class="NavButton">Menu</button>
-                        <div class="DropDownMenu">
-                            
-                            <li class="NavDropLink"><a class="NavDropHref" href="index.html">Home</a></li>
-                            <li class="NavDropLink"><a class="NavDropHref"href="Music.html">Music</a></li>
-                            <li class="NavDropLink"><a class="NavDropHref"href="Events.html">Events</a></li>
-                            <li class="NavDropLink"><a class="NavDropHref"href="Band.html">Band</a></li>
-                            <li class="NavDropLink"><a class="NavDropHref"href="Contact.html">Contact Us</a></li>
-                        </div>
-                    </ul>
+                        <li class="NavBar_LinkSelected"><a href="Contact.html">Contact Us</a></li>
+                    </div>
+                    <div class="NavBar_SM">
+                        <input type="checkbox" id="checkbox_toggle">
+                        <label for="checkbox_toggle">Menu</label>
+                        <ul>
+                            <li class="NavBar_SMLink"><a href="index.html">Home</a></li>
+                            <li class="NavBar_SMLink"><a href="Music.html">Music</a></li>
+                            <li class="NavBar_SMLink"><a href="Events.html">Events</a></li>
+                            <li class="NavBar_SMLink"><a href="Band.html">Band</a></li>
+                            <li class="NavBar_SMLink"><a href="Contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
             <!---Contains the nav links and header logo---->
@@ -47,19 +58,19 @@
                 <div class="col-form opaque-overlay">
                     <!--- Container for the page content--->
                     <form class="FormBox" action="/action_page.php">
-                        
-                            <h2>Contact us below!</h2>
-                            <label for="Firstname">First Name:</label>
-                            <input id="FirstName" type="text" name="FirstName" required >
-                            <label for="LastName">Last Name:</label>
-                            <input id="LastName" type="text" name="LastName" required >
-                            <label for="Email">Email Address:</label>
-                            <input id="Email" type="email" name="Email" required><br>
-                            <p><strong>Comment in the box below!</strong></p>
-                            <textarea rows="10" cols="45" name="comments" id="comments" required>
+
+                        <h2>Contact us below!</h2>
+                        <label for="Firstname">First Name:</label>
+                        <input id="FirstName" type="text" name="FirstName" required>
+                        <label for="LastName">Last Name:</label>
+                        <input id="LastName" type="text" name="LastName" required>
+                        <label for="Email">Email Address:</label>
+                        <input id="Email" type="email" name="Email" required><br>
+                        <p><strong>Comment in the box below!</strong></p>
+                        <textarea rows="10" cols="45" name="comments" id="comments" required>
                         </textarea>
-                            <button class="FormButton" type="submit"> Submit </button>
-                        
+                        <button class="FormButton" type="submit"> Submit </button>
+
                     </form>
 
                 </div>

@@ -8,35 +8,47 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
     <title>The Monkees</title>
+    <style type="text/css">
+        html {
+            background: #696969;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100%;
+        }
+    </style>
 </head>
 <!--- References to styles sheets and title--->
+
 <body>
     <div id="WholeContainer">
-       <div class="Header">
+        <div class="Header">
             <header class="Header_Container">
                 <div class="Header_Logo">
                     <a href="index.html" title="Monkees home page">
                         <h1>The Monkees</h1>
                     </a>
                 </div>
-                <nav class="Navbar">
+                <nav class="NavBar">
+                    <div class="NavBar_FM">
                         <li class="NavBar_Link"><a href="index.html">Home</a></li>
                         <li class="NavBar_Link"><a href="Music.html">Music</a></li>
                         <li class="NavBar_Link"><a href="Events.html">Events</a></li>
-                        <li class="NavBar_Link"><a href="Band.html">Band</a></li>
+                        <li class="NavBar_LinkSelected"><a href="Band.html">Band</a></li>
                         <li class="NavBar_Link"><a href="Contact.html">Contact Us</a></li>
-                        
-                    <ul class="navbardropdown">
-                        <button class="NavButton">Menu</button>
-                        <div class="DropDownMenu">
-                            
-                            <li class="NavDropLink"><a class="NavDropHref" href="index.html">Home</a></li>
-                            <li class="NavDropLink"><a class="NavDropHref"href="Music.html">Music</a></li>
-                            <li class="NavDropLink"><a class="NavDropHref"href="Events.html">Events</a></li>
-                            <li class="NavDropLink"><a class="NavDropHref"href="Band.html">Band</a></li>
-                            <li class="NavDropLink"><a class="NavDropHref"href="Contact.html">Contact Us</a></li>
-                        </div>
-                    </ul>
+                    </div>
+                    <div class="NavBar_SM">
+                        <input type="checkbox" id="checkbox_toggle">
+                        <label for="checkbox_toggle">Menu</label>
+                        <ul>
+                            <li class="NavBar_SMLink"><a href="index.html">Home</a></li>
+                            <li class="NavBar_SMLink"><a href="Music.html">Music</a></li>
+                            <li class="NavBar_SMLink"><a href="Events.html">Events</a></li>
+                            <li class="NavBar_SMLink"><a href="Band.html">Band</a></li>
+                            <li class="NavBar_SMLink"><a href="Contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
             <!---Contains the nav links and header logo---->
@@ -45,36 +57,39 @@
         <div id="Body">
             <div class="col-small opaque-overlay">
 
-               <div class="BandContainer">
-                
-                <div class="Band">
-                    <div class="Band_GridItem">
-                    <img class="Band_Img Band_Img--BorderBlack" src="./assets/images/dj.jpg" alt="DJ Image">
-                    <h2 class="Band_Header">Davy Jones</h2>
-                    <p class="Band_MainText">This is Davy Jones, Born on 30 December 1945 in Openshaw, Lancashire, England. He is the lead vocals.</p>
+                <div class="BandContainer">
+                    <div class="BandHeader">
+                        <h1 class="BandHeader_Text">Band</h1>
                     </div>
-                    
-                    <div class="Band_GridItem">
-                    <img class="Band_Img Band_Img--BorderBlack" src="./assets/images/md.jpg" alt="MD Image">
-                    <h2 class="Band_Header">Micky Dolenz</h2>
-                    <p class="Band_MainText">This is Micky Dolenz, Born on Jr.March 8, 1945 in Los Angeles, California, U.S. He plays the drums.</p>
-                    </div>
-                    <div class="Band_GridItem">
-                    <img class="Band_Img Band_Img--BorderBlack" src="./assets/images/mn.jpg" alt="MN Image">
-                    <h2 class="Band_Header">Michael Nesmith</h2>
-                    <p class="Band_MainText">This is Michael Nesmith, Born on December 30, 1942 in Houston, Texas, U.S. Plays guitar and vocals.</p>
-                    </div>
-                    <div class="Band_GridItem">
-                    <img class="Band_Img Band_Img--BorderBlack" src="./assets/images/pt.jpg" alt="PT Image">
-                    <h2 class="Band_Header">Peter Tork</h2>
-                    <p class="Band_MainText">This is Peter Tork, born on February 13, 1942 in Washington, D.C., U.S. He plays the guitar and keyboard.</p>
+                    <hr class="Block_Divider Block_Divider--White">
+                    <div class="Band">
+                        <div class="Band_GridItem">
+                            <img class="Band_Img Band_Img--BorderBlack" src="./assets/images/dj.jpg" alt="DJ Image">
+                            <h2 class="Band_Header">Davy Jones</h2>
+                            <p class="Band_MainText">This is Davy Jones, Born on 30 December 1945 in Openshaw, Lancashire, England. He is the lead vocals.</p>
+                        </div>
+
+                        <div class="Band_GridItem">
+                            <img class="Band_Img Band_Img--BorderBlack" src="./assets/images/md.jpg" alt="MD Image">
+                            <h2 class="Band_Header">Micky Dolenz</h2>
+                            <p class="Band_MainText">This is Micky Dolenz, Born on Jr.March 8, 1945 in Los Angeles, California, U.S. He plays the drums.</p>
+                        </div>
+                        <div class="Band_GridItem">
+                            <img class="Band_Img Band_Img--BorderBlack" src="./assets/images/mn.jpg" alt="MN Image">
+                            <h2 class="Band_Header">Michael Nesmith</h2>
+                            <p class="Band_MainText">This is Michael Nesmith, Born on December 30, 1942 in Houston, Texas, U.S. Plays guitar and vocals.</p>
+                        </div>
+                        <div class="Band_GridItem">
+                            <img class="Band_Img Band_Img--BorderBlack" src="./assets/images/pt.jpg" alt="PT Image">
+                            <h2 class="Band_Header">Peter Tork</h2>
+                            <p class="Band_MainText">This is Peter Tork, born on February 13, 1942 in Washington, D.C., U.S. He plays the guitar and keyboard.</p>
+                        </div>
                     </div>
                 </div>
-               </div>
-                
+
             </div>
-        </div> 
-    <div class="Footerbox">
+        </div>
+        <div class="Footerbox">
             <footer class="Footer">
                 <div class="Footer_SponserBar">
                     <li><a href="www.pearl.com"><img src="./assets/images/dunlop_w-80x50.png" alt="Dunlop"></img></a></li>
@@ -95,4 +110,5 @@
         </div>
     </div>
 </body>
+
 </html>
