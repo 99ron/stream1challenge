@@ -36,6 +36,11 @@ h2 {
  text-align: center;
 }
 
+.MusicHeader--Text{
+ text-align: center;
+ float:right;
+}
+
 .TrackList--Name {
  text-decoration: underline;
  text-align: center;
@@ -103,7 +108,7 @@ th {
 
 /* Layout for grid with bandmember details */
 
-.BandMembers {
+.Band {
  display: grid;
  grid-template-columns: auto;
  padding: 10px;
@@ -111,18 +116,22 @@ th {
 
 /* This sets the grid's background colour and border */
 
-.BandGridItem {
+.Band_GridItem {
  background-color: rgba(255, 255, 255, 0.8);
  border: 3px solid rgba(0, 0, 0, 0.8);
  padding: 20px;
-
 }
 
-/* Paragraph text colour on Band members page */
+.Band_Header {
+ color:Black;
+ margin-right: 3%;
+ float:right;
+ text-decoration: underline;
+}
 
-.BandMembers p {
- color: #000000;
- ;
+.Band_MainText {
+ /*float:right;*/
+ margin-left: 30px;
 }
 
 /* margin for the BandMembers Grid on display */
@@ -132,7 +141,7 @@ th {
  margin-left: auto;
 }
 
-.borderblack {
+.Band_Img--BorderBlack {
  border: solid;
  border-width: 2px;
  border-color: #000000;
@@ -140,25 +149,16 @@ th {
 
 /* image size for band members profile pictures */
 
-.imgsize {
+.Band_Img{
  width: 249px;
 }
-
-.floatleft {
- float: left;
-}
-
-.floatright {
- float: right;
-}
-
 
 
 /*-------------------------------------Header*/
 
 /* header container formatting */
 
-.Header-Container {
+.Header_Container {
  display: flex;
  flex-direction: row;
  border-bottom: 2px solid #F2F2F2;
@@ -554,7 +554,7 @@ input {
 
 /* This sets different styles to be used when below 700px wide */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 650px) {
 
  /*--------------------Header media query */
  .Navbar {
@@ -576,7 +576,9 @@ input {
   width: 100%;
  }
 
-
+ .Band_Header {
+  float:none;
+ }
 
  /*---------------------Footer media query */
  .Footer {
