@@ -41,7 +41,7 @@ h2 {
  font-size: xx-large;
 }
 
-.MusicHeader--Text{
+.MusicHeader_Text {
  text-align: center;
 }
 
@@ -49,21 +49,21 @@ h2 {
  font-size: xx-large;
 }
 
-.TrackList--Name {
+.TrackList_Name {
  text-decoration: underline;
  text-align: center;
  margin-left: 30px;
  margin-bottom: 5px;
 }
 
-.Events--Text {
+.Events_HeaderText {
  font-size: large;
  color: #ffffff;
  text-align: center;
  margin-bottom: 30px;
 }
 
-.MusicInfo--Text {
+.MusicInfo_Text {
  font-size: 20px;
 }
 
@@ -76,9 +76,9 @@ h2 {
  font-size: large;
 }
 
-.Events--Table {
+.Events_Table {
  color: #ffffff;
- margin-bottom: 9%;
+ margin-bottom: 3%;
 }
 
 
@@ -107,7 +107,7 @@ th {
 
 /* Colour change for links while hovered */
 
-.Events--Table a:hover {
+.Events_Table a:hover {
  background-color: White;
  color: black;
 }
@@ -131,9 +131,9 @@ th {
 }
 
 .Band_Header {
- color:Black;
+ color: Black;
  margin-right: 3%;
- float:right;
+ float: right;
  text-decoration: underline;
 }
 
@@ -157,10 +157,9 @@ th {
 
 /* image size for band members profile pictures */
 
-.Band_Img{
+.Band_Img {
  width: 249px;
 }
-
 
 /*-------------------------------------Header*/
 
@@ -213,80 +212,86 @@ nav {
 }
 
 .NavBar_SM {
-  display:none;
+ display: none;
+}
+
+.NavBar_SM label:hover {
+ background-color: #ffa500;
+ transition: background-color 0.2s ease-in-out;
 }
 
 /* Click to expand button */
 
-.NavBar_SM label{
-    box-sizing: border-box;
-    display: inline-block;
-    width: 100%;
-    background-color: #57A0D4;
-    padding: 15px 20px;
-    margin-right: 45px;
-    border-radius: 15px;
-    cursor: pointer;
-    text-align: center;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+.NavBar_SM label {
+ box-sizing: border-box;
+ display: inline-block;
+ width: 100%;
+ background-color: black;
+ border: solid white 2px;
+ padding: 15px 20px;
+ border-radius: 15px;
+ cursor: pointer;
+ text-align: center;
+ box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+ transition: background-color 0.2s ease-in-out;
 
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
 }
 
 /*  The ul will have display:none by default */
 
-.NavBar_SM ul{
-    position: absolute;
-    list-style: none;
-    text-align: center;
-    width: 100%;
-    z-index: 1;
-    margin:0;
-    padding:0;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+.NavBar_SM ul {
+ position: absolute;
+ list-style: none;
+ text-align: center;
+ width: 100%;
+ z-index: 1;
+ margin: 0;
+ padding: 0;
+ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
 
-    display: none;
+ display: none;
 }
 
-.NavBar_SM ul li{
-    padding: 15px;
-    display:block;
-    background-color: #fff;
-    color: Black;
-    margin-bottom: 1px;
-    cursor: pointer;
+.NavBar_SM ul li {
+ padding: 15px;
+ display: block;
+ background-color: #fff;
+ color: Black;
+ margin-bottom: 1px;
+ cursor: pointer;
 }
 
-.NavBar_SM ul li:hover{
-    background-color: #ff9900;
-    color: #FFF;
+.NavBar_SM ul li:hover {
+ background-color: #ff9900;
+ color: #FFF;
 }
 
-.NavBar_SM ul li a{
-    color: inherit;
-    text-decoration: none;
-    
+.NavBar_SM ul li a {
+ color: inherit;
+ text-decoration: none;
+
 }
 
 /* This hides the checkbox icon */
 
-input[type=checkbox]{
-    display: none;
+input[type=checkbox] {
+ display: none;
 }
 
 /* Hides the UL by default */
 
 .NavBar_SM ul {
- display:none;
+ display: none;
 }
 
 /* This shows the UL when checked. */
 
-.NavBar_SM input[type=checkbox]:checked ~ ul {
- display:block;
+.NavBar_SM input[type=checkbox]:checked~ul {
+ display: block;
 }
 
 /* On desktop/tablet device the buttons highlight and gain
@@ -345,14 +350,6 @@ audio {
  margin: 0 auto;
 }
 
-/* .col-small-old {
- position: relative;
- min-height: 1px;
- float: left;
- width: 100%;
- height: 100%;
- text-align: center;
-} */
 
 /* sets the main body for content to be displayed as flex */
 
@@ -386,14 +383,41 @@ audio {
  margin-bottom: 50px;
 }
 
-.Events--Header {
+.Events_Header {
  margin-top: 2%;
  text-align: center
+}
+
+.Event_Pictures {
+ display: flex;
+ margin-top: 3%;
+}
+
+.Event_Pictures_Img1 {
+ margin-left: 20%;
+ margin-right: auto;
+ border: solid white 3px;
+}
+
+.Event_Pictures_Img2 {
+ margin-right: 20%;
+ margin-left: auto;
+ border: solid white 3px;
 }
 
 .FooterAlbumInfo {
  Margin-top: 6%;
  Margin-bottom: 4%;
+}
+
+.FooterAlbumInfo_AlbumShop {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 15px;
+ width: 50%;
+ height: auto;
+ border: solid white 2px;
 }
 
 .TrackList {
@@ -475,17 +499,18 @@ input {
 /* This gives the opaque look for the background image to make it less harsh */
 
 .PageImage {
-  margin-top:15px;
+ margin-top: 25px;
+ margin-bottom: 25px;
 }
 
 .PageImage_Img {
-   display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-    width: 50%;
-    height: auto;
-    border: solid white 6px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 15px;
+ width: 50%;
+ height: auto;
+ border: solid white 6px;
 }
 
 .opaque-overlay {
@@ -532,12 +557,12 @@ input {
  border-style: solid;
  border-width: 5px;
  border-color: #ffffff;
- margin-top: 15px;
- margin-bottom: 15px;
+ margin-top: 25px;
+ margin-bottom: 25px;
 }
 
 
-/*-------------------------------------------------*/
+/*-------------------------------------------------Footer*/
 
 /* Formatting for the Footer box */
 
@@ -554,7 +579,7 @@ input {
 /* layout for sponser icons/links */
 
 .Footer_SponserBar {
- margin-top:10px;
+ margin-top: 10px;
 }
 
 .Footer_SponserBar li {
@@ -619,17 +644,16 @@ input {
  }
 
  .Header_Logo {
-  font-size: 10px;
-  margin-top: 23px;
+  font-size: 17px;
+  margin-top: -4px;
  }
 
  .NavBar {
   margin-left: auto;
-  margin-right: auto;
-  padding-left: 40%;
-}
+  margin-right: 5%;
  }
- 
+
+
  /*--------------------Body Media Query */
  .VideoStructure {
   border-width: 1px;
@@ -637,23 +661,44 @@ input {
  }
 
  .Band_Header {
-  float:none;
+  float: none;
  }
 
- /*---------------------Footer media query */
- .Footer {
-  display: flex;
+ .Events_HeaderText {
+  margin-left: 16%;
+  margin-right: 16%;
  }
 
- .Footer_SocialMediaLinks img {
-  height: 40px;
-  width: auto;
-  float: left;
-  margin: 5px;
- }
 
- .Footer_SponserBar img {
-  height: 40px;
-  width: auto;
- }
+audio {
+ width: 95%;
+ margin-left: 2%;
+ margin-bottom: 15px;
+}
 
+/*---------------------Table Query */
+
+Table {
+ width: 85%;
+ margin-left: 10%;
+}
+
+/*---------------------Footer media query */
+
+.Footer {
+ display: flex;
+}
+
+.Footer_SocialMediaLinks img {
+ height: 40px;
+ width: auto;
+ float: left;
+ margin: 5px;
+}
+
+.Footer_SponserBar img {
+ height: 40px;
+ width: auto;
+}
+
+}
