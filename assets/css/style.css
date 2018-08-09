@@ -159,6 +159,7 @@ th {
 
 .Band_Img {
  width: 249px;
+ margin-left: 4%;
 }
 
 /*-------------------------------------Header*/
@@ -367,7 +368,7 @@ audio {
  display: flex;
  justify-content: center;
  padding-top: 7em;
- padding-bottom: 2em;
+ padding-bottom: 3em;
 }
 
 .CompiledAudio {
@@ -427,6 +428,10 @@ audio {
  background-color: rgba(0, 0, 0, 0.5);
 }
 
+/*Sets labels to be left by 3% */
+label {
+ margin-left: 3%;
+}
 
 /* formatting for input of the form */
 
@@ -455,10 +460,11 @@ input {
  border: none;
  color: #ffffff;
  padding-top: 5px;
- padding-bottom: 5px;
+ padding-bottom: 7px;
  width: 40%;
  margin-left: 30%;
  margin-right: 30%;
+ margin-bottom: 3%;
  font-family: 'roboto';
  border-radius: 4px;
 }
@@ -471,11 +477,12 @@ input {
 
 #comments {
  resize: none;
- width: 100%;
+ width: 95%;
  box-sizing: border-box;
  border: 2px solid black;
  border-radius: 4px;
  margin-bottom: 10px;
+ margin: 8px 10px;
 }
 
 .FormBox p {
@@ -559,9 +566,11 @@ input {
  border-color: #ffffff;
  margin-top: 25px;
  margin-bottom: 25px;
-}
+}g
 
-
+.NavBar_FM {
+ margin-top: 10px;
+}go
 /*-------------------------------------------------Footer*/
 
 /* Formatting for the Footer box */
@@ -653,8 +662,7 @@ input {
   margin-right: 5%;
  }
 
-
- /*--------------------Body Media Query */
+  /*--------------------Body Media Query */
  .VideoStructure {
   border-width: 1px;
   width: 100%;
@@ -664,41 +672,48 @@ input {
   float: none;
  }
 
+ .Band_Img {
+  margin-left: 7%;
+ }
+
+ .FormBox {
+  margin-left: 2%;
+  margin-right: 2%;
+ }
+ 
  .Events_HeaderText {
   margin-left: 16%;
   margin-right: 16%;
  }
 
 
-audio {
- width: 95%;
- margin-left: 2%;
- margin-bottom: 15px;
-}
+ audio {
+  width: 95%;
+  margin-left: 2%;
+  margin-bottom: 15px;
+ }
 
-/*---------------------Table Query */
+ /*---------------------Table Query */
+ Table {
+  width: 85%;
+  margin-left: 10%;
+ }
 
-Table {
- width: 85%;
- margin-left: 10%;
-}
+ /*---------------------Footer media query */
+ .Footer {
+  display: flex;
+ }
 
-/*---------------------Footer media query */
+ .Footer_SocialMediaLinks img {
+  height: 40px;
+  width: auto;
+  float: left;
+  margin: 5px;
+ }
 
-.Footer {
- display: flex;
-}
-
-.Footer_SocialMediaLinks img {
- height: 40px;
- width: auto;
- float: left;
- margin: 5px;
-}
-
-.Footer_SponserBar img {
- height: 40px;
- width: auto;
-}
+ .Footer_SponserBar img {
+  height: 40px;
+  width: auto;
+ }
 
 }
