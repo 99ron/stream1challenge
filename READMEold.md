@@ -5,4 +5,6 @@ as users will be able to listen to sample tracks, head to the store to purchase 
 Project deployed and test:
 
 
-http://jsbin.com/hugociyeke/edit?html,css,js,output -- Fade in Images
+http://jsbin.com/hugociyeke/edit?html,css,js,output -- Fade in Images JS
+
+https://stackoverflow.com/questions/6121203/how-to-do-fade-in-and-fade-out-with-javascript-and-css/18760338#18760338 -- Fade in with CSS (probably better)
