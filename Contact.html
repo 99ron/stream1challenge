@@ -62,7 +62,7 @@
                 <div class="col-form opaque-overlay">
                     <!-- Container for the page content-->
 
-                    <form class="FormBox" action="/action_page.php">
+                    <form class="FormBox" action="Contact.html"> <!--All form details which runs a script on submit-->
                         <h2>Contact us below!</h2>
                         <label for="FirstName">First Name:</label>
                         <input id="FirstName" type="text" name="FirstName" required>
@@ -73,7 +73,7 @@
                         <p><strong>Comment in the box below!</strong></p>
                         <textarea rows="10" cols="45" name="comments" id="comments" required>
                         </textarea>
-                        <button class="FormButton" type="submit"> Submit </button>
+                        <button class="FormButton" type="Submit" value="Submit" onclick="MsgSent()"> Submit </button>
 
                     </form>
 
@@ -94,10 +94,10 @@
 
                 <div class="Footer_SocialMediaLinks">
                     <ul>
-                        <li><a href="www.facebook.com"><img src="./assets/images/Social/fb.png" alt="Facebook"></a></li>
-                        <li><a href="www.facebook.com"><img src="./assets/images/Social/insta.png" alt="Facebook"></a></li>
-                        <li><a href="www.facebook.com"><img src="./assets/images/Social/soundcloud.ico" alt="Facebook"></a></li>
-                        <li><a href="www.facebook.com"><img src="./assets/images/Social/twit.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="./assets/images/Social/fb.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="./assets/images/Social/insta.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="./assets/images/Social/soundcloud.ico" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="./assets/images/Social/twit.png" alt="Facebook"></a></li>
                     </ul>
                 </div>
 
@@ -105,6 +105,11 @@
             <!-- Contains the footer sponser and social links -->
         </div>
     </div>
+    
+    <script> /* This sets a pop up message when Submit on Form has been pressed */
+    function MsgSent() {
+        alert('Form has been submitted');
+    }
+</script>
 </body>
-
 </html>
