@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
     <title>The Monkees</title>
 </head>
-<!--- References to styles sheets and title--->
+<!-- References to styles sheets and title-->
 
 <body>
     <div class="WholeContainer">
 
         <div class="Header">
+            <!--Contains the nav links and header logo-->
             <header class="Header_Container">
                 <div class="Header_Logo">
                     <a href="index.html" title="Monkees home page">
@@ -22,16 +23,21 @@
                     </a>
                 </div>
                 <nav class="NavBar">
+                    <!--Container for both menu's -->
                     <div class="NavBar_FM">
-                        <li class="NavBar_LinkSelected"><a href="index.html">Home</a></li>
-                        <li class="NavBar_Link"><a href="Music.html">Music</a></li>
-                        <li class="NavBar_Link"><a href="Events.html">Events</a></li>
-                        <li class="NavBar_Link"><a href="Band.html">Band</a></li>
-                        <li class="NavBar_Link"><a href="Contact.html">Contact Us</a></li>
+                        <!--When greater than X px's it displays this menu-->
+                        <ul>
+                            <li class="NavBar_LinkSelected"><a href="index.html">Home</a></li>
+                            <li class="NavBar_Link"><a href="Music.html">Music</a></li>
+                            <li class="NavBar_Link"><a href="Events.html">Events</a></li>
+                            <li class="NavBar_Link"><a href="Band.html">Band</a></li>
+                            <li class="NavBar_Link"><a href="Contact.html">Contact Us</a></li>
+                        </ul>
                     </div>
                     <div class="NavBar_SM">
-                        <input type="checkbox" id="checkbox_toggle">
-                        <label for="checkbox_toggle">Menu</label>
+                        <!--When less than X px's it displays this -->
+                        <input type="checkbox" id="NavBar_SM_CBToggle">
+                        <label for="NavBar_SM_CBToggle">Menu</label>
                         <ul>
                             <li class="NavBar_SMLink"><a href="index.html">Home</a></li>
                             <li class="NavBar_SMLink"><a href="Music.html">Music</a></li>
@@ -41,20 +47,20 @@
                         </ul>
                     </div>
                 </nav>
-                </header>
-                    <!---Contains the nav links and header logo---->
+            </header>
+
         </div>
 
         <div class="Body">
 
             <div class="col-small centercontent opaque-overlay">
                 <div class="CompiledQuotes">
-                    <!--- Container for the page content--->
+                    <!-- Container for the page content-->
 
                     <h2 class="Quotes_Header">Quotes:</h2>
                     <hr class="Block_Divider Block_Divider--White">
 
-                    <!--- header --->
+                    <!-- header -->
 
                     <div class="QuoteBody">
                         <blockquote class="QuoteBody_Block">
@@ -110,32 +116,36 @@
                             <cite> - IndieRecords</cite>
                         </Blockquote>
                     </div>
-                    <!--- Quotes and video  --->
+                    <!-- Quotes and video  -->
 
                 </div>
             </div>
 
-            <!--- Contains the content for this page--->
+            <!-- Contains the content for this page-->
         </div>
 
-        <div class="Footerbox">
+        <div class="FooterBox">
             <footer class="Footer">
                 <div class="Footer_SponserBar">
-                    <li><a href="www.pearl.com"><img src="./assets/images/dunlop_w-80x50.png" alt="Dunlop"></img></a></li>
-                    <li><a href="www.emg.com"><img src="./assets/images/emg_w-80x50.png" alt="EMG"></img></a></li>
-                    <li><a href="www.ESP.com"><img src="./assets/images/esp_w-80x50.png" alt="ESP"></img></a></li>
-                    <li><a href="www.pearl.com"><img src="./assets/images/pearl_w-80x50.png" alt="Pearl"></img></a></li>
+                    <ul>
+                        <li><a href="www.pearl.com"><img src="./assets/images/dunlop_w-80x50.png" alt="Dunlop"></a></li>
+                        <li><a href="www.emg.com"><img src="./assets/images/emg_w-80x50.png" alt="EMG"></a></li>
+                        <li><a href="www.ESP.com"><img src="./assets/images/esp_w-80x50.png" alt="ESP"></a></li>
+                        <li><a href="www.pearl.com"><img src="./assets/images/pearl_w-80x50.png" alt="Pearl"></a></li>
+                    </ul>
                 </div>
 
                 <div class="Footer_SocialMediaLinks">
-                    <li><a href="www.facebook.com"><img src="./assets/images/Social/fb.png" alt="Facebook"></a></li>
-                    <li><a href="www.facebook.com"><img src="./assets/images/Social/insta.png" alt="Facebook"></a></li>
-                    <li><a href="www.facebook.com"><img src="./assets/images/Social/soundcloud.ico" alt="Facebook"></a></li>
-                    <li><a href="www.facebook.com"><img src="./assets/images/Social/twit.png" alt="Facebook"></a></li>
+                    <ul>
+                        <li><a href="www.facebook.com"><img src="./assets/images/Social/fb.png" alt="Facebook"></a></li>
+                        <li><a href="www.facebook.com"><img src="./assets/images/Social/insta.png" alt="Facebook"></a></li>
+                        <li><a href="www.facebook.com"><img src="./assets/images/Social/soundcloud.ico" alt="Facebook"></a></li>
+                        <li><a href="www.facebook.com"><img src="./assets/images/Social/twit.png" alt="Facebook"></a></li>
+                    </ul>
                 </div>
 
             </footer>
-            <!--- Contains the footer sponser and social links --->
+            <!-- Contains the footer sponser and social links -->
         </div>
     </div>
 </body>

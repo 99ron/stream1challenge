@@ -1,84 +1,84 @@
 /* This sets the background the index page */
 
 html {
- background: url(/assets/images/bgstage1.jpg) no-repeat center center fixed;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
- height: 100%;
+  background: url(/assets/images/bgstage1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
 }
 
 /* This sets the body margin's and font family */
 
 body {
- font-family: 'Roboto', sans-serif;
- margin: 0px;
- height: 100%;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  height: 100%;
 }
 
 
 /* Sets the boundries for the main div for the page */
 
 .WholeContainer {
- min-height: 100%;
- position: relative;
+  min-height: 100%;
+  position: relative;
 }
 
 /*-------------------------------------Colours, Text etc*/
 
 h1 {
- color: #ffffff;
+  color: #ffffff;
 }
 
 h2 {
- color: #ffffff;
- text-align: center;
+  color: #ffffff;
+  text-align: center;
 }
 
 .BandHeader_Text {
- text-align: center;
- font-size: xx-large;
+  text-align: center;
+  font-size: xx-large;
 }
 
 .MusicHeader_Text {
- text-align: center;
+  text-align: center;
 }
 
 .Quotes_Header {
- font-size: xx-large;
+  font-size: xx-large;
 }
 
 .TrackList_Name {
- text-decoration: underline;
- text-align: center;
- margin-left: 30px;
- margin-bottom: 5px;
+  text-decoration: underline;
+  text-align: center;
+  margin-left: 30px;
+  margin-bottom: 5px;
 }
 
 .Events_HeaderText {
- font-size: large;
- color: #ffffff;
- text-align: center;
- margin-bottom: 30px;
+  font-size: large;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .MusicInfo_Text {
- font-size: 20px;
+  font-size: 20px;
 }
 
 .CompiledAudio p {
- color: #ffffff;
- text-align: center;
+  color: #ffffff;
+  text-align: center;
 }
 
 .FooterAlbumInfo p {
- font-size: large;
+  font-size: large;
 }
 
 .Events_Table {
- color: #ffffff;
- margin-bottom: 3%;
+  color: #ffffff;
+  margin-bottom: 3%;
 }
 
 
@@ -89,27 +89,27 @@ h2 {
 /* Preset table font, border and width */
 
 table {
- font-family: arial, sans-serif;
- border-collapse: collapse;
- width: 100%;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 /* Size of border for the row and columns */
 
 td,
 th {
- border-bottom: solid;
- border-width: 2px;
- border-color: #ffffff;
- text-align: left;
- padding: 8px;
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: #ffffff;
+  text-align: left;
+  padding: 8px;
 }
 
 /* Colour change for links while hovered */
 
 .Events_Table a:hover {
- background-color: White;
- color: black;
+  background-color: White;
+  color: black;
 }
 
 /*-------------------------------------BandMemberList */
@@ -117,49 +117,48 @@ th {
 /* Layout for grid with bandmember details */
 
 .Band {
- display: grid;
- grid-template-columns: auto;
- padding: 10px;
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
 }
 
 /* This sets the grid's background colour and border */
 
 .Band_GridItem {
- background-color: rgba(255, 255, 255, 0.8);
- border: 3px solid rgba(0, 0, 0, 0.8);
- padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
 }
 
 .Band_Header {
- color: Black;
- margin-right: 3%;
- float: right;
- text-decoration: underline;
+  color: Black;
+  margin-right: 3%;
+  float: right;
+  text-decoration: underline;
 }
 
 .Band_MainText {
- /*float:right;*/
- margin-left: 30px;
+  margin-left: 30px;
 }
 
 /* margin for the BandMembers Grid on display */
 
 .BandContainer {
- margin-right: auto;
- margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .Band_Img--BorderBlack {
- border: solid;
- border-width: 2px;
- border-color: #000000;
+  border: solid;
+  border-width: 2px;
+  border-color: #000000;
 }
 
 /* image size for band members profile pictures */
 
 .Band_Img {
- width: 249px;
- margin-left: 4%;
+  width: 249px;
+  margin-left: 4%;
 }
 
 /*-------------------------------------Header*/
@@ -167,155 +166,154 @@ th {
 /* header container formatting */
 
 .Header_Container {
- display: flex;
- flex-direction: row;
- border-bottom: 2px solid #F2F2F2;
- padding: 5px 0;
- background-color: black;
- z-index: 1;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #F2F2F2;
+  padding: 5px 0;
+  background-color: black;
+  z-index: 1;
 }
 
 /* Logo text margins */
 
 .Header_Logo {
- margin-top: 7px;
- margin-left: 5%;
- display: block;
+  margin-top: 7px;
+  margin-left: 5%;
+  display: block;
 }
 
 /* Link colour */
 
 a {
- text-decoration: none;
- color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* Link visited colour */
 
 a:visited {
- color: #ffffff;
+  color: #ffffff;
 }
 
 /* Nav div margins */
 
 nav {
- margin: 0.8em 3px 0 4%;
+  margin: 0.8em 3px 0 4%;
 }
 
 /* Navbar links formatting (not button/mobile display) */
 
 .NavBar li {
- display: inline-block;
- padding: 10px 4em 10px 4em;
- font-size: large;
- border-radius: 15px;
- transition: background-color 0.5s ease-out;
+  display: inline-block;
+  padding: 10px 4em 10px 4em;
+  font-size: large;
+  border-radius: 15px;
+  transition: background-color 0.5s ease-out;
 }
 
 .NavBar_SM {
- display: none;
+  display: none;
 }
 
 .NavBar_SM label:hover {
- background-color: #ffa500;
- transition: background-color 0.2s ease-in-out;
+  background-color: #ffa500;
+  transition: background-color 0.2s ease-in-out;
 }
 
 /* Click to expand button */
 
 .NavBar_SM label {
- box-sizing: border-box;
- display: inline-block;
- width: 100%;
- background-color: black;
- border: solid white 2px;
- padding: 15px 20px;
- border-radius: 15px;
- cursor: pointer;
- text-align: center;
- box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
- transition: background-color 0.2s ease-in-out;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  background-color: black;
+  border: solid white 2px;
+  padding: 15px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-in-out;
 
- -webkit-user-select: none;
- -moz-user-select: none;
- -ms-user-select: none;
- user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /*  The ul will have display:none by default */
 
 .NavBar_SM ul {
- position: absolute;
- list-style: none;
- text-align: center;
- width: 100%;
- z-index: 1;
- margin: 0;
- padding: 0;
- box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
-
- display: none;
+  position: absolute;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  display: none;
 }
 
 .NavBar_SM ul li {
- padding: 15px;
- display: block;
- background-color: #fff;
- color: Black;
- margin-bottom: 1px;
- cursor: pointer;
+  padding: 15px;
+  display: block;
+  background-color: #fff;
+  color: Black;
+  margin-bottom: 1px;
+  cursor: pointer;
 }
 
 .NavBar_SM ul li:hover {
- background-color: #ff9900;
- color: #FFF;
+  background-color: #ff9900;
+  color: #FFF;
 }
 
 .NavBar_SM ul li a {
- color: inherit;
- text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 
 }
 
 /* This hides the checkbox icon */
 
 input[type=checkbox] {
- display: none;
+  display: none;
 }
 
 /* Hides the UL by default */
 
 .NavBar_SM ul {
- display: none;
+  display: none;
 }
 
 /* This shows the UL when checked. */
 
 .NavBar_SM input[type=checkbox]:checked~ul {
- display: block;
+  display: block;
 }
 
 /* On desktop/tablet device the buttons highlight and gain
    a border when hovered*/
 
 .NavBar_Link:hover {
- background-color: #ff9900;
- font-style: italic;
- border: solid;
- border-color: #ffffff;
- border-width: 1px;
- border-radius: 15px;
- padding: 8px 70px 10px 72px;
+  background-color: #ff9900;
+  font-style: italic;
+  border: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  border-radius: 15px;
+  padding: 8px 70px 10px 72px;
 }
 
 .NavBar_LinkSelected {
- background-color: #008080;
- font-weight: bolder;
- border: solid;
- border-color: #ffffff;
- border-width: 1px;
- border-radius: 15px;
- padding: 8px 70px 10px 72px;
+  background-color: #008080;
+  font-weight: bolder;
+  border: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  border-radius: 15px;
+  padding: 8px 70px 10px 72px;
 }
 
 
@@ -324,302 +322,298 @@ input[type=checkbox] {
 /* sets all audio width and margins */
 
 audio {
- width: 80%;
- margin-left: 60px;
- margin-bottom: 15px;
+  width: 80%;
+  margin-left: 60px;
+  margin-bottom: 15px;
 }
 
 /* sets the image location on the screen for user to click on to access store */
 
 .AlbumShop {
- display: block;
- margin: 0 auto;
- width: 40%;
- border: solid;
- border-width: 5px;
- border-color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  border: solid;
+  border-width: 5px;
+  border-color: #ffffff;
 }
 
 .Body {
- height: 100%;
+  height: 100%;
 }
 
 .BandHeaderImage img {
- max-width: 60%;
- height: auto;
- display: block;
- margin: 0 auto;
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
-
 
 /* sets the main body for content to be displayed as flex */
 
 .col-small {
- display: flex;
+  display: flex;
 }
 
 .centercontent {
- justify-content: center;
+  justify-content: center;
 }
 
 /* formatting for the form to be centre of screen */
 
 .col-form {
- display: flex;
- justify-content: center;
- padding-top: 7em;
- padding-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  padding-top: 7em;
+  padding-bottom: 3em;
 }
 
 .CompiledAudio {
- Margin-top: 20px;
+  Margin-top: 20px;
 }
 
 .CompiledQuotes {
- margin: 15px 40px 40px 60px;
+  margin: 15px 40px 40px 60px;
 }
 
 .EventsContainer {
- margin-top: 4%;
- margin-bottom: 50px;
+  margin-top: 4%;
+  margin-bottom: 50px;
 }
 
 .Events_Header {
- margin-top: 2%;
- text-align: center
+  margin-top: 2%;
+  text-align: center
 }
 
 .Event_Pictures {
- display: flex;
- margin-top: 3%;
+  display: flex;
+  margin-top: 3%;
 }
 
 .Event_Pictures_Img1 {
- margin-left: 20%;
- margin-right: auto;
- border: solid white 3px;
+  margin-left: 20%;
+  margin-right: auto;
+  border: solid white 3px;
 }
 
 .Event_Pictures_Img2 {
- margin-right: 20%;
- margin-left: auto;
- border: solid white 3px;
+  margin-right: 20%;
+  margin-left: auto;
+  border: solid white 3px;
 }
 
 .FooterAlbumInfo {
- Margin-top: 6%;
- Margin-bottom: 4%;
+  Margin-top: 6%;
+  Margin-bottom: 4%;
 }
 
 .FooterAlbumInfo_AlbumShop {
- display: block;
- margin-left: auto;
- margin-right: auto;
- margin-bottom: 15px;
- width: 50%;
- height: auto;
- border: solid white 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  width: 50%;
+  height: auto;
+  border: solid white 2px;
 }
 
 .TrackList {
- border: solid;
- border-color: #ffffff;
- margin: 15px;
- background-color: rgba(0, 0, 0, 0.5);
+  border: solid;
+  border-color: #ffffff;
+  margin: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*Sets labels to be left by 3% */
+
 label {
- margin-left: 3%;
+  margin-left: 3%;
 }
 
 /* formatting for input of the form */
 
 input {
- width: 95%;
- padding: 10px 20px;
- margin: 8px 10px;
- box-sizing: border-box;
- border: 2px solid black;
- border-radius: 4px;
- display: block;
+  width: 95%;
+  padding: 10px 20px;
+  margin: 8px 10px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  display: block;
 }
 
 /* Colour of text, background colour for form */
 
 .FormBox {
- color: #ffffff;
- background-color: rgba(0, 0, 0, 0.2);
- border: solid #ffffff 2px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: solid #ffffff 2px;
 }
 
 /* Customising the form submit button  */
 
 .FormButton {
- background-color: #ff9900;
- border: none;
- color: #ffffff;
- padding-top: 5px;
- padding-bottom: 7px;
- width: 40%;
- margin-left: 30%;
- margin-right: 30%;
- margin-bottom: 3%;
- font-family: 'roboto';
- border-radius: 4px;
+  background-color: #ff9900;
+  border: none;
+  color: #ffffff;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 3%;
+  font-family: 'roboto';
+  border-radius: 4px;
 }
 
 .FormButton:hover {
- background-color: #ff8000;
+  background-color: #ff8000;
 }
 
 /* Comment box formatting within the form */
 
 #comments {
- resize: none;
- width: 95%;
- box-sizing: border-box;
- border: 2px solid black;
- border-radius: 4px;
- margin-bottom: 10px;
- margin: 8px 10px;
+  resize: none;
+  width: 95%;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin: 8px 10px;
 }
 
 .FormBox p {
- margin-left: 25px;
+  margin-left: 25px;
 }
 
 /* HR width and height */
 
 .Block_Divider {
- width: 105px;
- height: 5px;
- border: 0;
+  width: 105px;
+  height: 5px;
+  border: 0;
 }
 
 /* HR colour */
 
 .Block_Divider--White {
- background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 /* This gives the opaque look for the background image to make it less harsh */
 
 .PageImage {
- margin-top: 25px;
- margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .PageImage_Img {
- display: block;
- margin-left: auto;
- margin-right: auto;
- margin-bottom: 15px;
- width: 50%;
- height: auto;
- border: solid white 6px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  width: 50%;
+  height: auto;
+  border: solid white 6px;
 }
 
 .opaque-overlay {
- top: 0;
- left: 0;
- height: 100%;
- /*margin-bottom: 35px;*/
- background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* formatting for quotes */
 
 .QuoteBody {
- display: inline-block;
- vertical-align: top;
- text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
 }
 
 /* Margin for quotes container  */
 
 .QuoteBody_Block {
- border-left: 0;
- padding: 10px 20px;
- margin: 0 0 20px;
- font-size: 17px;
- color: #ffffff;
+  border-left: 0;
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17px;
+  color: #ffffff;
 }
 
 /* Formatting for store image photo */
 
 .StoreImage {
- display: block;
- margin-left: auto;
- margin-right: auto;
- width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
 }
 
 /* Formatting for video on main screen, make it adjustable for different res */
 
 .VideoStructure {
- Display: block;
- margin: 0 auto;
- width: 70%;
- border-style: solid;
- border-width: 5px;
- border-color: #ffffff;
- margin-top: 25px;
- margin-bottom: 25px;
-}g
+  Display: block;
+  margin: 0 auto;
+  width: 70%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
 
 .NavBar_FM {
- margin-top: 10px;
-}go
+  margin-top: 10px;
+}
+
 /*-------------------------------------------------Footer*/
 
 /* Formatting for the Footer box */
-
-.Footerbox {
- position: absolute;
- margin: 0px auto -80px;
- width: 100%;
- background-color: transparent;
- border-top: solid;
- border-color: #ffffff;
- border-width: 2px;
+.FooterBox {
+  position: absolute;
+  margin: 0px auto -80px;
+  width: 100%;
+  background-color: transparent;
+  border-top: solid;
+  border-color: #ffffff;
+  border-width: 2px;
 }
 
 /* layout for sponser icons/links */
 
 .Footer_SponserBar {
- margin-top: 10px;
+  margin-top: 10px;
 }
 
 .Footer_SponserBar li {
- display: inherit;
- margin: 5px;
- text-decoration: none;
- float: left;
+  display: inherit;
+  margin: 5px;
+  text-decoration: none;
+  float: left;
 }
 
 /* layout for social media links */
-
 .Footer_SocialMediaLinks li {
- display: inherit;
- text-decoration: none;
- float: right;
- margin: 5px 5px 5px 5px;
+  display: inherit;
+  text-decoration: none;
+  float: right;
+  margin: 5px 5px 5px 5px;
 
 }
 
 /* Social media icon formatting */
-
 .Footer_SocialMediaLinks img {
- height: 50px;
- width: auto;
- border-radius: 50%;
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
 }
 
 /*----------------------------------------------------MEDIA*/
 
 /* This sets different styles to be used when below 1380px wide */
-
 @media only screen and (max-width: 1380px) {
 
  .Header_Logo {
@@ -631,13 +625,9 @@ input {
   display: inline-block;
   padding: 10px 3em 10px 4em;
  }
-
 }
 
-
-
 /* This sets different styles to be used when below 700px wide */
-
 @media only screen and (max-width: 650px) {
 
  /*--------------------Header media query */
@@ -662,7 +652,7 @@ input {
   margin-right: 5%;
  }
 
-  /*--------------------Body Media Query */
+ /*--------------------Body Media Query */
  .VideoStructure {
   border-width: 1px;
   width: 100%;
@@ -680,13 +670,13 @@ input {
   margin-left: 2%;
   margin-right: 2%;
  }
- 
+
  .Events_HeaderText {
   margin-left: 16%;
   margin-right: 16%;
  }
 
-
+ /* Margin for Audio */
  audio {
   width: 95%;
   margin-left: 2%;
@@ -715,5 +705,4 @@ input {
   height: 40px;
   width: auto;
  }
-
 }

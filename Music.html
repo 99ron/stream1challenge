@@ -8,7 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
     <title>The Monkees</title>
-    <style type="text/css">
+    <style>
+        /* Assigns a background colour for this page only */
+
         html {
             background: #1E90FF;
             -webkit-background-size: cover;
@@ -19,7 +21,7 @@
         }
     </style>
 </head>
-<!--- References to styles sheets and title--->
+<!-- References to styles sheets and title-->
 
 <body>
     <div class="WholeContainer">
@@ -32,15 +34,17 @@
                 </div>
                 <nav class="NavBar">
                     <div class="NavBar_FM">
-                        <li class="NavBar_Link"><a href="index.html">Home</a></li>
-                        <li class="NavBar_LinkSelected"><a href="Music.html">Music</a></li>
-                        <li class="NavBar_Link"><a href="Events.html">Events</a></li>
-                        <li class="NavBar_Link"><a href="Band.html">Band</a></li>
-                        <li class="NavBar_Link"><a href="Contact.html">Contact Us</a></li>
+                        <ul>
+                            <li class="NavBar_Link"><a href="index.html">Home</a></li>
+                            <li class="NavBar_LinkSelected"><a href="Music.html">Music</a></li>
+                            <li class="NavBar_Link"><a href="Events.html">Events</a></li>
+                            <li class="NavBar_Link"><a href="Band.html">Band</a></li>
+                            <li class="NavBar_Link"><a href="Contact.html">Contact Us</a></li>
+                        </ul>
                     </div>
                     <div class="NavBar_SM">
-                        <input type="checkbox" id="checkbox_toggle">
-                        <label for="checkbox_toggle">Menu</label>
+                        <input type="checkbox" id="NavBar_SM_CBToggle">
+                        <label for="NavBar_SM_CBToggle">Menu</label>
                         <ul>
                             <li class="NavBar_SMLink"><a href="index.html">Home</a></li>
                             <li class="NavBar_SMLink"><a href="Music.html">Music</a></li>
@@ -51,9 +55,9 @@
                     </div>
                 </nav>
             </header>
-            <!---Contains the nav links and header logo---->
+            <!--Contains the nav links and header logo-->
         </div>
-        <!--- Contains the content for this page--->
+        <!-- Contains the content for this page-->
         <div class="Body">
             <div class="col-small centercontent opaque-overlay">
 
@@ -95,31 +99,35 @@
                         <p>Like their music? Buy their album from the store below!</p>
 
                         <a href="#">
-                         <img class="FooterAlbumInfo_AlbumShop" src="./assets/images/album2.jpg" alt="BUY ALBUM HERE!"></img>
+                         <img class="FooterAlbumInfo_AlbumShop" src="./assets/images/album2.jpg" alt="BUY ALBUM HERE!">
                         </a>
                     </div>
                 </div>
 
             </div>
         </div>
-        <div class="Footerbox">
+        <div class="FooterBox">
             <footer class="Footer">
                 <div class="Footer_SponserBar">
-                    <li><a href="www.pearl.com"><img src="./assets/images/dunlop_w-80x50.png" alt="Dunlop"></img></a></li>
-                    <li><a href="www.emg.com"><img src="./assets/images/emg_w-80x50.png" alt="EMG"></img></a></li>
-                    <li><a href="www.ESP.com"><img src="./assets/images/esp_w-80x50.png" alt="ESP"></img></a></li>
-                    <li><a href="www.pearl.com"><img src="./assets/images/pearl_w-80x50.png" alt="Pearl"></img></a></li>
+                    <ul>
+                    <li><a href="www.pearl.com"><img src="./assets/images/dunlop_w-80x50.png" alt="Dunlop"></a></li>
+                    <li><a href="www.emg.com"><img src="./assets/images/emg_w-80x50.png" alt="EMG"></a></li>
+                    <li><a href="www.ESP.com"><img src="./assets/images/esp_w-80x50.png" alt="ESP"></a></li>
+                    <li><a href="www.pearl.com"><img src="./assets/images/pearl_w-80x50.png" alt="Pearl"></a></li>
+                    </ul>
                 </div>
 
                 <div class="Footer_SocialMediaLinks">
+                    <ul>
                     <li><a href="www.facebook.com"><img src="./assets/images/Social/fb.png" alt="Facebook"></a></li>
                     <li><a href="www.facebook.com"><img src="./assets/images/Social/insta.png" alt="Facebook"></a></li>
                     <li><a href="www.facebook.com"><img src="./assets/images/Social/soundcloud.ico" alt="Facebook"></a></li>
                     <li><a href="www.facebook.com"><img src="./assets/images/Social/twit.png" alt="Facebook"></a></li>
+                    </ul>
                 </div>
 
             </footer>
-            <!--- Contains the footer sponser and social links --->
+            <!-- Contains the footer sponser and social links -->
         </div>
     </div>
 </body>
