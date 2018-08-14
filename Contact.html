@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> <!-- This is used for content animation -->
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
     <title>The Monkees</title>
     <style>
@@ -62,7 +63,7 @@
                 <div class="col-form opaque-overlay">
                     <!-- Container for the page content-->
 
-                    <form class="FormBox" action="Contact.html"> <!--All form details which runs a script on submit-->
+                    <form class="FormBox animated swing" action="Contact.html" onSubmit="MsgSent()"> <!--All form details which runs a script on submit-->
                         <h2>Contact us below!</h2>
                         <label for="FirstName">First Name:</label>
                         <input id="FirstName" type="text" name="FirstName" required>
@@ -73,8 +74,7 @@
                         <p><strong>Comment in the box below!</strong></p>
                         <textarea rows="10" cols="45" name="comments" id="comments" required>
                         </textarea>
-                        <button class="FormButton" type="Submit" value="Submit" onclick="MsgSent()"> Submit </button>
-
+                        <button class="FormButton" type="Submit" value="Submit"> Submit </button>
                     </form>
 
                 </div>

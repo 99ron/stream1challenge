@@ -1,27 +1,40 @@
 # User Centric Frontend Milestone
 
-One or two paragraphs providing an overview of your project.
+Overview:
 
-
+With this project I've stuck with using the template files supplied regarding a band "The Monkees". Mentor has set a challenge to try and avoid using bootstrap and use flexbox
+and/or other methods to set the stucture out for my website. I've gone for a simplistic design as I had mobile users in mind, I've created 5 pages which include; Index (main), Music, Events,
+Band and Contact us. 
  
 ## UX
- 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+I started this project knowing that the website was for a band who want to get better exposure out on the wider web! With this in mind the website needed to feature space for sample tracks, video's,
+band info, event line ups and most importantly a way for general public to be able to contact them for hiring. I started out with paper to draw my ideas which I then used a program called 'Pencil' to mock up
+a digital version which could be sent so they have an idea of what I was planning to do (documents included). With all this in mind, as a user you can easily and quickly navigate around the site with
+no issues.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+### User Stories
+
+- I'd like to listen to some music, I click on Music tab and click on play, this will play a track hosted on the site.
+- I'd like to view their line up to see where they're playing next, click on the Events tab and look down the Events table, can see where they're playing and purchase tickets.
+- I'd like to know who's in the band, click on the Band Tab and scroll down, this will show the band members with an image and description.
+- I'd like to book them for an event, click on the contact us page and send a message, this will allow people to contact the band for queries.
 
 ## Features
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+
+Main Page: When you arrive to the site you're greeted with a vivid background which has an opaque layer over the top, this has quotes as well as a video implemented half way down the page.
+Music Page: This page has a solid background colour, music is in a list where a user can hit play and listen without any issues. If they want to purchase any tracks or albums they can do so by 
+            clicking on the image directly below the text.
+Events Page: This page implements a table to layout the Date, Location and place to purchase tickets via an external source.
+Contact Page: This utilises a form with ID's linking the label to the text fields, all having the 'required' tag so each box needs to be filled including @ on email which once done will
+              use javascript to send a simple alert saying the message has sent.
  
 ### Existing Features
 - Feature 1 - allows users X to achieve Y, by having them fill out Z
 - ...
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
