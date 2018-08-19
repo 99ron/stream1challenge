@@ -199,7 +199,7 @@ a:visited {
 /* Nav div margins */
 
 nav {
-  margin: 0.8em 3px 0 4%;
+  margin: 12px 3px 0 4%;
 }
 
 /* Navbar links formatting (not button/mobile display) */
@@ -387,7 +387,6 @@ audio {
 }
 
 .EventsContainer {
-  margin-top: 4%;
   margin-bottom: 50px;
 }
 
