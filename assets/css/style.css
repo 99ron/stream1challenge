@@ -548,7 +548,7 @@ input {
 .QuoteBody_Block {
   border-left: 0;
   padding: 10px 20px;
-  margin: 0 0 20px;
+  margin: 20px 0 20px 0;
   font-size: 17px;
   color: #ffffff;
 }
@@ -629,7 +629,7 @@ input {
   border-radius:50%;
   vertical-align:middle;
   border:0;
-  margin-top:28px;
+  margin-top:46px;
 }
 
 /*----------------------------------------------------MEDIA*/
