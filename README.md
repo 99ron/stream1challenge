@@ -2,8 +2,8 @@
 
 Overview:
 
-With this project I've stuck with using the template files supplied regarding a band "The Monkees". Mentor has set a challenge to try and avoid using bootstrap and use flexbox
-and/or other methods to set the stucture out for my website. I've gone for a simplistic design as I had mobile users in mind, I've created 5 pages which include; Index (main), Music, Events,
+With this project I've stuck with using the template files supplied regarding a band called "The Monkees". My mentor has set a challenge to try and avoid using bootstrap by using flexbox
+and/or other methods to set the stucture out for my website. I've gone for a simplistic design as I had mobile users in mind, so this will load quickly on all devices. I've created 5 pages which include; Index (main), Music, Events,
 Band and Contact us. 
  
 ## UX
@@ -31,7 +31,6 @@ Contact Page: This utilises a form with ID's linking the label to the text field
 NavBar: Simply links inline when used on a big screen otherwise utilised a checkbox method to make a drop down menu making it quick and easy to navigate around on a small device.
 
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
 - NavBar - allows users to navigate by clicking the links at the top. 
 - NavBar ~ small screen - Saves space on screen by utilising a checkbox method for a button to bring up the nav menu.
 - Video Player - allows user to watch a video with ease by simply clicking on the screen. This has the controls to play, pause, expand and adjust volume.
@@ -44,13 +43,14 @@ NavBar: Simply links inline when used on a big screen otherwise utilised a check
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+- [HTML5] (Intergrated)
+    - I used HTML5 for adding content to my web pages.
 
 - [CSS](Intergrated)
     - I used CSS to build the structure for the site instead of bootstrap, set colours, spacing and general manipulation of items on screen.
 
 - [Animate.css](https://daneden.github.io/animate.css/)
-    - Used this to make entering a page a little more interesting, avoided using Javascript as some users have this disabled.
+    - Used this to make entering a page a little more interesting, avoided using Javascript as some users have this disabled by choice or policy.
 
 - [JavaScript](Intergrated)
     - I used JavaScript to make a message appear on the screen when a form is submitted.
