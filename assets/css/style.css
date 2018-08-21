@@ -80,6 +80,8 @@ h2 {
 .Events_Table {
   color: #ffffff;
   margin-bottom: 3%;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 
@@ -126,40 +128,50 @@ th {
 /* This sets the grid's background colour and border */
 
 .Band_GridItem {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 3px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  background-color: rgba(255, 165, 0, 0.8);
+  border: 3px ridge #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display:flex;
 }
 
 .Band_Header {
-  color: Black;
-  margin-right: 3%;
-  float: right;
+  color: #ffffff;
   text-decoration: underline;
+  font-size: 32px;
 }
 
 .Band_MainText {
-  margin-left: 30px;
+  text-align: center;
+  color:#ffffff;
+  font-size: 20px;
+  padding-top: 20px;
 }
 
 /* margin for the BandMembers Grid on display */
 
 .BandContainer {
-  margin-right: auto;
-  margin-left: auto;
+  width:100%;
 }
 
-.Band_Img--BorderBlack {
-  border: solid;
-  border-width: 2px;
-  border-color: #000000;
+.Band_Img--Border {
+  border-right-style: solid;
+  border-left-style: solid;
+  border-width: 5px;
+  border-color: #ffffff;
 }
 
 /* image size for band members profile pictures */
 
 .Band_Img {
-  width: 249px;
-  margin-left: 4%;
+  width: 400px;
+  border-radius: 35px;
+}
+
+.Band_Img_Text {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*-------------------------------------Header*/
@@ -294,6 +306,12 @@ input[type=checkbox] {
   display: block;
 }
 
+@media only screen and (min-width: 1330px) {
+  .burger {
+    display:none;
+  }
+}
+
 /* On desktop/tablet device the buttons highlight and gain
    a border when hovered*/
 
@@ -392,8 +410,15 @@ audio {
 
 .Events_Header {
   margin-top: 2%;
-  font-size: xx-large;
+  font-size: x-large;
   text-align: center
+}
+
+.Events_PreviousEvents {
+  text-align: center;
+  color:#ffffff;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .Event_Pictures {
@@ -402,15 +427,14 @@ audio {
 }
 
 .Event_Pictures_Img1 {
-  margin-left: 20%;
-  margin-right: auto;
   border: solid white 3px;
+  width:650px;
 }
 
 .Event_Pictures_Img2 {
-  margin-right: 20%;
-  margin-left: auto;
+  margin-left: 25px;
   border: solid white 3px;
+  Width:650px;
 }
 
 .FooterAlbumInfo {
@@ -634,15 +658,15 @@ input {
 
 /*----------------------------------------------------MEDIA*/
 
-/* This sets different styles to be used when below 1380px wide */
-  @media only screen and (max-width: 1400px) {
+/* This sets different styles to be used when below 1440px wide */
+  @media only screen and (max-width: 1440px) {
 
- .Header_Logo {
+.Header_Logo {
   font-size: 10px;
   margin-top: 23px;
  }
 
- .Navbar li {
+.Navbar li {
   display: inline-block;
   padding: 10px 3em 10px 4em;
  }
@@ -653,7 +677,7 @@ input {
 
  /*--------------------Header media query */
  .NavBar_FM {
-  display: none;
+  /*display: none;*/
  }
 
  .NavBar_SM {
@@ -672,9 +696,64 @@ input {
   margin-left: auto;
   margin-right: 5%;
  }
+ 
+.Event_Pictures {
+  display:block;
+}
+ 
+.Event_Pictures_Img1 {
+  margin-right: 0;
+  margin-left: 0;
+  width:50%;
+ }
+ 
+.Event_Pictures_Img2 {
+   margin-left: 0;
+   margin-right: 0;
+   width:50%;
+ }
+ 
+ .Band {
+  display: grid;
+  grid-template-columns: auto;
+  padding-bottom: 10px;
 }
 
- /* This sets different styles to be used when below 700px wide */
+/* This sets the grid's background colour and border */
+
+.Band_GridItem {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+
+.Band_Header {
+  color: Black;
+  margin-right: 3%;
+  float: right;
+  text-decoration: underline;
+}
+
+.Band_MainText {
+  margin-left: 30px;
+}
+
+.Band_Img--BorderBlack {
+  border: solid;
+  border-width: 2px;
+  border-color: #000000;
+}
+
+/* image size for band members profile pictures */
+
+.Band_Img {
+  width: 249px;
+  margin-left: 4%;
+}
+ 
+}
+
+ /* This sets different styles to be used when below 650px wide */
   @media only screen and (max-width: 650px) {
 
  /*--------------------Body Media Query */
@@ -701,6 +780,7 @@ input {
   margin-right: 16%;
  }
 
+ 
  /* Margin for Audio */
  audio {
   width: 95%;
@@ -738,4 +818,17 @@ input {
  .QuoteBody_Image {
    display:none;
  }   
+ 
+ .Event_Pictures_Img1 {
+  margin-right: 0;
+  margin-left: 0;
+  width:100%;
+ }
+ 
+.Event_Pictures_Img2 {
+   margin-left: 0;
+   margin-right: 0;
+   width:100%;
+ }
+ 
 }
