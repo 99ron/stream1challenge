@@ -122,7 +122,8 @@ th {
 .Band {
   display: grid;
   grid-template-columns: auto;
-  padding: 10px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 /* This sets the grid's background colour and border */
@@ -146,7 +147,7 @@ th {
   text-align: center;
   color:#ffffff;
   font-size: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 /* margin for the BandMembers Grid on display */
@@ -172,6 +173,23 @@ th {
 .Band_Img_Text {
   margin-left: auto;
   margin-right: auto;
+}
+
+.Band_SubText {
+  color:#ffffff;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Band_Img_Text_List li {
+  padding-top: 10px;
+  color:#ffffff;
+  list-style: square;
+}
+
+.Band_Img_Text_List--Italic {
+  font-style:italic;
 }
 
 /*-------------------------------------Header*/
@@ -429,10 +447,12 @@ audio {
 .Event_Pictures_Img1 {
   border: solid white 3px;
   width:650px;
+  margin-left: auto;
 }
 
 .Event_Pictures_Img2 {
   margin-left: 25px;
+  margin-right:auto;
   border: solid white 3px;
   Width:650px;
 }
