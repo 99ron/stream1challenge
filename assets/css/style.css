@@ -199,6 +199,18 @@ th {
 
 /*-------------------------------------Header*/
 
+/* Hides Checkbox when greater than 1330px's */
+
+.NavBarMenu Checkbox {
+  display:none;
+}
+
+/* This hides the checkbox icon */
+
+input[type=checkbox] {
+  display: none;
+} 
+
 /* header container formatting */
 
 .Header_Container {
@@ -245,94 +257,6 @@ nav {
   font-size: large;
   border-radius: 15px;
   transition: background-color 0.5s ease-out;
-}
-
-.NavBar_SM {
-  display: none;
-}
-
-.NavBar_SM label:hover {
-  background-color: #ffa500;
-  transition: background-color 0.2s ease-in-out;
-}
-
-/* Click to expand button */
-
-.NavBar_SM label {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 100%;
-  background-color: black;
-  border: solid white 2px;
-  padding: 15px 20px;
-  border-radius: 15px;
-  cursor: pointer;
-  text-align: center;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.2s ease-in-out;
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/*  The ul will have display:none by default */
-
-.NavBar_SM ul {
-  position: absolute;
-  list-style: none;
-  text-align: center;
-  width: 100%;
-  z-index: 1;
-  margin: 0;
-  padding: 0px 0px 0px 3px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
-  display: none;
-}
-
-.NavBar_SM ul li {
-  padding: 15px;
-  display: block;
-  background-color: #fff;
-  color: Black;
-  margin-bottom: 1px;
-  cursor: pointer;
-}
-
-.NavBar_SM ul li:hover {
-  background-color: #ff9900;
-  color: #FFF;
-}
-
-.NavBar_SM ul li a {
-  color: inherit;
-  text-decoration: none;
-
-}
-
-/* This hides the checkbox icon */
-
-input[type=checkbox] {
-  display: none;
-}
-
-/* Hides the UL by default */
-
-.NavBar_SM ul {
-  display: none;
-}
-
-/* This shows the UL when checked. */
-
-.NavBar_SM input[type=checkbox]:checked~ul {
-  display: block;
-}
-
-@media only screen and (min-width: 1330px) {
-  .burger {
-    display:none;
-  }
 }
 
 /* On desktop/tablet device the buttons highlight and gain
@@ -624,9 +548,6 @@ input {
   margin-bottom: 25px;
 }
 
-.NavBar_FM {
-  margin-top: 10px;
-}
 
 /*-------------------------------------------------Footer*/
 
@@ -701,16 +622,106 @@ input {
   @media only screen and (max-width: 1330px) {
 
  /*--------------------Header media query */
- .NavBar_FM {
-  /*display: none;*/
+ 
+ /* Unhides Checkbox menu */
+ 
+ .NavBarMenu Checkbox{
+   display:block;
  }
+ 
+.NavBarMenu label:hover {
+  background-color: #ffa500;
+  transition: background-color 0.2s ease-in-out;
+}
 
- .NavBar_SM {
+/* Click to expand button */
+
+.NavBarMenu label {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  background-color: black;
+  border: solid white 2px;
+  padding: 15px 50px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-in-out;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*  The ul will have display:none by default */
+
+.NavBarMenu ul {
+  position: absolute;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  margin: 0;
+  padding: 0px 0px 0px 3px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.NavBarMenu ul li {
+  padding: 15px;
+  display: block;
+  background-color: #fff;
+  color: Black;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+
+.NavBarMenu ul li:hover {
+  background-color: #ff9900;
+  color: #FFF;
+}
+
+.NavBarMenu ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* This shows the UL when checked. */
+
+.NavBarMenu [type=checkbox]:checked ~ ul {
+  display: block;
+}
+ 
+ .NavBarMenu {
   position: relative;
   display: inline-block;
   font-size: 16px;
   color: #FFF;
  }
+
+/* On phone menu highlights and gain a border when hovered*/
+
+.NavBar_Link:hover {
+  font-style: normal;
+  border: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  border-radius: 15px;
+  border: solid white 2px;
+  padding: 13px 15px;
+  
+}
+
+.NavBar_LinkSelected {
+  font-weight: bolder;
+  border: solid;
+  border-width: 1px;
+  border-radius: 15px; 
+  border: solid white 2px;
+  padding: 13px 15px;
+}
 
  .Header_Logo {
   font-size: 17px;
