@@ -53,8 +53,7 @@ h2 {
 .TrackList_Name {
   text-decoration: underline;
   text-align: center;
-  margin-left: 30px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .Events_HeaderText {
@@ -66,6 +65,7 @@ h2 {
 
 .MusicInfo_Text {
   font-size: 20px;
+  margin: 40px 0px;
 }
 
 .CompiledAudio p {
@@ -133,7 +133,7 @@ th {
 /* This sets the grid's background colour and border */
 
 .Band_GridItem {
-  background-color: rgba(255, 165, 0, 0.8);
+  background-color: rgba(44, 67, 96, 0.8);
   border: 3px ridge #ffffff;
   border-radius: 10px;
   padding: 10px;
@@ -199,9 +199,13 @@ th {
 
 /*-------------------------------------Header*/
 
-/* Hides Checkbox when greater than 1330px's */
+/* Hides Checkbox and label when greater than 1330px's */
 
 .NavBarMenu Checkbox {
+  display:none;
+}
+
+.NavBarMenu label {
   display:none;
 }
 
@@ -218,7 +222,7 @@ input[type=checkbox] {
   flex-direction: row;
   border-bottom: 2px solid #F2F2F2;
   padding: 5px 0;
-  background-color: black;
+  background-color: #303030;
   z-index: 1;
 }
 
@@ -298,8 +302,10 @@ nav {
 
 audio {
   width: 80%;
-  margin-left: 60px;
-  margin-bottom: 15px;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: #00ffb7;
 }
 
 /* sets the image location on the screen for user to click on to access store */
@@ -322,6 +328,24 @@ audio {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+/* Sets the format for aside on the contact us page*/
+.Contact-us-Para {
+  max-width:40%;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+
+/* Sets the format for the contact us image */
+.Contact-Img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 2px white;
 }
 
 /* sets the main body for content to be displayed as flex */
@@ -396,7 +420,7 @@ audio {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
-  width: 50%;
+  width: 35%;
   height: auto;
   border: solid white 2px;
 }
@@ -404,6 +428,7 @@ audio {
 .TrackList {
   border: solid;
   border-color: #ffffff;
+  border-radius: 20px;
   margin: 15px;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -505,7 +530,7 @@ input {
   top: 0;
   left: 0;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* formatting for quotes */
@@ -556,7 +581,7 @@ input {
   position: absolute;
   margin: 0px auto -80px;
   width: 100%;
-  background-color: transparent;
+  background-color: #303030;
   border-top: solid;
   border-color: #ffffff;
   border-width: 2px;
@@ -629,7 +654,7 @@ input {
    display:block;
  }
  
-.NavBarMenu label:hover {
+ .NavBarMenu label:hover {
   background-color: #ffa500;
   transition: background-color 0.2s ease-in-out;
 }
@@ -823,7 +848,8 @@ input {
  audio {
   width: 95%;
   margin-left: 2%;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  
  }
 
  /*---------------------Table Query */
