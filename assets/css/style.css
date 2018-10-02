@@ -27,6 +27,10 @@ body {
 
 /*-------------------------------------Colours, Text etc*/
 
+p {
+  color: #ffffff;
+}
+
 h1 {
   color: #ffffff;
 }
@@ -46,6 +50,8 @@ h2 {
   font-size: xx-large;
 }
 
+.
+
 .Quotes_Header {
   font-size: xx-large;
 }
@@ -56,7 +62,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-.Events_HeaderText {
+.ParaText {
   font-size: large;
   color: #ffffff;
   text-align: center;
@@ -137,8 +143,20 @@ th {
   border: 3px ridge #ffffff;
   border-radius: 10px;
   padding: 10px;
-  margin-bottom: 10px;
+  margin: 40px 40px;
   display:flex;
+}
+
+.BGI2 {
+  background-color: rgba(54, 44, 96, 0.8);
+}
+
+.BGI3 {
+  background-color: rgba(96, 44, 44, 0.8);
+}
+
+.BGI4 {
+  background-color: rgba(210, 117, 26, 0.8);
 }
 
 .Band_Header {
@@ -294,8 +312,7 @@ nav {
 .MainPageTitle {
   font-size:35px;
   text-align:center;
-  padding-bottom:25px;
-  color: #F8F8FF;
+  margin-top: 35px;
 }
 
 /* sets all audio width and margins */
@@ -411,7 +428,7 @@ audio {
 }
 
 .FooterAlbumInfo {
-  Margin-top: 6%;
+  Margin-top: 4%;
   Margin-bottom: 4%;
 }
 
@@ -420,6 +437,7 @@ audio {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
+  margin-top: 25px;
   width: 35%;
   height: auto;
   border: solid white 2px;
@@ -503,13 +521,19 @@ input {
   border: 0;
 }
 
+.Block_Divider--ThinAndLong {
+  width: 80%;
+  height: 2px;
+  border: 0;
+}
+
 /* HR colour */
 
 .Block_Divider--White {
   background-color: #ffffff;
 }
 
-/* This gives the opaque look for the background image to make it less harsh */
+/* This gives the opaque look for the background image to be softer on the eyes */
 
 .PageImage {
   margin-top: 25px;
@@ -641,6 +665,18 @@ input {
   display: inline-block;
   padding: 10px 3em 10px 4em;
  }
+
+ /* .FormBox {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: solid #ffffff 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 50px;
+}   */ 
+    
+    
 }
 
 /* This sets different styles to be used when below 1330px wide */
@@ -776,19 +812,17 @@ input {
  }
  
  .Band {
-  display: grid;
-  grid-template-columns: auto;
-  padding-bottom: 10px;
+    display: flex;
+    grid-template-columns: auto;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
 }
 
 /* This sets the grid's background colour and border */
 
 .Band_GridItem {
-  background-color: rgba(44, 67, 96, 0.8);
-  border: 3px ridge #ffffff;
-  border-radius: 10px;
-  padding: 10px;
-  display:block;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .Band_Header {
@@ -815,6 +849,16 @@ input {
   margin-right: auto;
   display: block;
  }
+
+    
+.Footer_SponserBar ul {
+   padding: 0;
+ }    
+ 
+.Footer_SocialMediaLinks ul {
+  padding: 0;
+} 
+    
 }
 
  /* This sets different styles to be used when below 650px wide */
