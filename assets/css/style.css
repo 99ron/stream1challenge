@@ -349,7 +349,7 @@ audio {
 
 /* Sets the format for aside on the contact us page*/
 .Contact-us-Para {
-  max-width:30%;
+  max-width:450px;
   margin: 0 20px;
   padding: 60px 20px 0;
   background-color: #000cff1a;
