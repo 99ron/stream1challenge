@@ -349,20 +349,21 @@ audio {
 
 /* Sets the format for aside on the contact us page*/
 .Contact-us-Para {
-  max-width:40%;
-  margin-left: 20px;
-  margin-right: 20px;
-  
+  max-width:30%;
+  margin: 0 20px;
+  padding: 60px 20px 0;
+  background-color: #000cff1a;
+  border-radius: 20px;
+  border-left: solid 2px white;
+  border-right: solid 2px white;
 }
 
-/* Sets the format for the contact us image */
+/* Sets the format for the -Ing us image */
 .Contact-Img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: solid 2px white;
+  margin: 80px auto;
 }
 
 /* sets the main body for content to be displayed as flex */
@@ -475,6 +476,7 @@ input {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.2);
   border: solid #ffffff 2px;
+  border-radius: 20px;
 }
 
 /* Customising the form submit button  */
@@ -665,17 +667,6 @@ input {
   display: inline-block;
   padding: 10px 3em 10px 4em;
  }
-
- /* .FormBox {
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.2);
-  border: solid #ffffff 2px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto 50px;
-}   */ 
-    
     
 }
 
@@ -861,6 +852,40 @@ input {
     
 }
 
+ /* This sets different styles to be used when below 950px wide */
+  @media only screen and (max-width: 950px) {
+  
+  /* Sets the layout for contact us page */
+  .col-form {
+    flex-direction: column;
+    flex-wrap:wrap;
+    padding-top: 0;
+  }
+    
+  .FormBox {
+    max-width: 600px;
+    margin: 10px auto;
+  }
+  
+  .Contact-us-Para {
+    margin: 0 auto 20px;
+    max-width: 100%;
+    background-color: #000cff1a;
+    border:0;
+    border-bottom: solid 1px white;
+    border-radius: 0;
+    padding: 20px;
+  }
+  
+  .Contact-Img {
+    margin: 30px auto 0;
+    
+  }
+  
+  }
+
+
+
  /* This sets different styles to be used when below 650px wide */
   @media only screen and (max-width: 650px) {
 
@@ -879,8 +904,8 @@ input {
  }
 
  .FormBox {
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
  }
 
  .Events_HeaderText {
