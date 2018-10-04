@@ -475,7 +475,8 @@ input {
 .FormBox {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.2);
-  border: solid #ffffff 2px;
+  border-left: solid #ffffff 2px;
+  border-right: solid #ffffff 2px;
   border-radius: 20px;
 }
 
@@ -891,58 +892,65 @@ input {
 
  /*--------------------Body Media Query */
  .VideoStructure {
-  border-width: 1px;
-  width: 100%;
+    border-width: 1px;
+    width: 100%;
  }
 
  .Band_Header {
-  float: none;
+    float: none;
  }
 
  .Band_Img {
-  width: 95%;
+    width: 95%;
  }
 
  .FormBox {
-  margin-left: 5%;
-  margin-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
  }
 
  .Events_HeaderText {
-  margin-left: 16%;
-  margin-right: 16%;
+    margin-left: 16%;
+    margin-right: 16%;
  }
 
+.QuoteBody_Block {
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+    border-radius: 20px;
+    border-bottom: solid 1px white;
+    background-color: rgba(0, 0, 0, 0.4);
+}  
  
  /* Margin for Audio */
  audio {
-  width: 95%;
-  margin-left: 2%;
-  margin-bottom: 20px;
+    width: 95%;
+    margin-left: 2%;
+    margin-bottom: 20px;
   
  }
 
  /*---------------------Table Query */
  Table {
-  width: 85%;
-  margin-left: 10%;
+    width: 85%;
+    margin-left: 10%;
  }
 
  /*---------------------Footer media query */
  .Footer {
-  display: flex;
+    display: flex;
  }
 
  .Footer_SocialMediaLinks img {
-  height: 40px;
-  width: auto;
-  float: left;
-  margin: 5px;
+    height: 40px;
+    width: auto;
+    float: left;
+    margin: 5px;
  }
 
  .Footer_SponserBar img {
-  height: 40px;
-  width: auto;
+    height: 40px;
+    width: auto;
  }
  
  .QuoteBody {
@@ -954,9 +962,9 @@ input {
  }   
  
  .Event_Pictures_Img1 {
-  margin-right: 0;
-  margin-left: 0;
-  width:100%;
+    margin-right: 0;
+    margin-left: 0;
+    width:100%;
  }
  
 .Event_Pictures_Img2 {
