@@ -137,11 +137,12 @@ The way I ran my code was to use the 'run' feature in Cloud9 to open up the webs
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- All written content was thought of on the spot as a filler.
+- Grid layout for the 'Events' page was sourced from w3schools (https://www.w3schools.com/css/css_grid.asp) to which I amended to suite me.
 
 ### Media
-- The photos used in this site were obtained from ...
+- All images I've used were sourced from Google Images and the template folder for the 1st Milestone.
 
 ### Acknowledgements
 
-- I received inspiration for this project from X test
+- I had inspiration from several band's websites, Children of Bodom mainly.
